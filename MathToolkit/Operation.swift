@@ -25,3 +25,14 @@ struct OperationImplementation: Codable {
     let expression: String
 }
 
+struct JsonOperation: Codable, OperationProtocol {
+    let name: String
+    let inputs: [OperationInput]
+    let image: String?
+    
+    let implementations: [OperationImplementation]
+    
+    func calculate(inputs: [String : Double]) -> [OperationResult]? {
+        return nil
+    }
+}
