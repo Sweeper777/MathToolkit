@@ -6,3 +6,9 @@ struct OperationInput: Codable {
     let rejectFloatingPoint: Bool
 }
 
+struct OperationResult {
+    let name: String
+    let from: String
+    let value: String
+}
+
