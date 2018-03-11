@@ -19,3 +19,9 @@ protocol OperationProtocol {
     
     func calculate (inputs: [String: Double]) -> [OperationResult]?
 }
+
+struct OperationImplementation: Codable {
+    let resultName: String
+    let expression: String
+}
+
