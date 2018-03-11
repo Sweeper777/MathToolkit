@@ -12,3 +12,10 @@ struct OperationResult {
     let value: String
 }
 
+protocol OperationProtocol {
+    var name: String { get }
+    var inputs: [OperationInput] { get }
+    var image: String? { get }
+    
+    func calculate (inputs: [String: Double]) -> [OperationResult]?
+}
