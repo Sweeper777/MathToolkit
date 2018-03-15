@@ -24,6 +24,14 @@ protocol OperationProtocol {
 struct OperationImplementation: Codable {
     let resultName: String
     let expression: String
+    var fromValues: [String] {
+        let matches = "\\$(\\w)".r!.findAll(in: expression)
+        var variablesUsed = matches.map { $0.group(at: 1)! }
+        variablesUsed.remove(objects: "pref90")
+        variablesUsed.remove(objects: "pref180")
+        variablesUsed.remove(objects: "pi")
+        return variablesUsed
+    }
 }
 
 struct JsonOperation: Codable, OperationProtocol {
