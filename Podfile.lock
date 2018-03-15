@@ -1,0 +1,52 @@
+PODS:
+  - CrossroadRegex (1.0.0)
+  - DDMathParser (2.0.0)
+  - EZLoadingActivity (1.01)
+  - MGSwipeTableCell (1.6.6)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SCLAlertView (0.7.0)
+  - SwiftRandom (1.0.0)
+  - SwiftyUtils (2.0.0)
+
+DEPENDENCIES:
+  - CrossroadRegex
+  - DDMathParser (from `https://github.com/davedelong/DDMathParser.git`, branch `swift4`)
+  - EZLoadingActivity
+  - MGSwipeTableCell
+  - RxCocoa
+  - RxSwift
+  - SCLAlertView (from `https://github.com/ahmedsafadii/SCLAlertView-Swift.git`)
+  - SwiftRandom
+  - SwiftyUtils
+
+EXTERNAL SOURCES:
+  DDMathParser:
+    :branch: swift4
+    :git: https://github.com/davedelong/DDMathParser.git
+  SCLAlertView:
+    :git: https://github.com/ahmedsafadii/SCLAlertView-Swift.git
+
+CHECKOUT OPTIONS:
+  DDMathParser:
+    :commit: df33815fea0e8bc1594f7360712045817a184383
+    :git: https://github.com/davedelong/DDMathParser.git
+  SCLAlertView:
+    :commit: 90826ee643e319375aadd6415aaa0e8fce643766
+    :git: https://github.com/ahmedsafadii/SCLAlertView-Swift.git
+
+SPEC CHECKSUMS:
+  CrossroadRegex: f9eec8e064fb467cdfc2b2d4553b529ec06f0073
+  DDMathParser: 74cddd0aa652cfed79e68fdd076f1ee63ab43a16
+  EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
+  MGSwipeTableCell: c3bc6e261e7bc06c112909fe3fb8205de286082c
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SwiftRandom: 437275c63500ddf5a565cbd56996fb23f12cfc3d
+  SwiftyUtils: ae914aa96b5672e9282904771e5e5b44d2e307d6
+
+PODFILE CHECKSUM: 1d0c22e0eacac3d1cbb6adb712eb6c6391a3016f
+
+COCOAPODS: 1.3.1
