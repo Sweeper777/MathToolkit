@@ -58,4 +58,11 @@ class UserSettings {
         set { UserDefaults.standard.set(newValue, forKey: "useDegrees") }
     }
     
+    static func convertToPref (_ angleRadians: Double) -> Double {
+        return useDegrees ? 180 * angleRadians / UserSettings.valueOfPi : angleRadians
+    }
+    
+    static func convertFromPref (_ prefAngle: Double) -> Double {
+        return useDegrees ? prefAngle * UserSettings.valueOfPi / 180.0 : prefAngle
+    }
 }
