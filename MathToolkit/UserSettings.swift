@@ -65,4 +65,12 @@ class UserSettings {
     static func convertFromPref (_ prefAngle: Double) -> Double {
         return useDegrees ? prefAngle * UserSettings.valueOfPi / 180.0 : prefAngle
     }
+    
+    static var pref90Degrees: Double {
+        return convertToPref(valueOfPi / 2)
+    }
+    
+    static var pref180Degrees: Double {
+        return pref90Degrees * 2
+    }
 }
