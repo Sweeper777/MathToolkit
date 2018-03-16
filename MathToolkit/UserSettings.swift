@@ -52,4 +52,10 @@ class UserSettings {
             }
         }
     }
+    
+    static var useDegrees: Bool {
+        get { return UserDefaults.standard.bool(forKey: "useDegrees") }
+        set { UserDefaults.standard.set(newValue, forKey: "useDegrees") }
+    }
+    
 }
