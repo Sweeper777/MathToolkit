@@ -37,4 +37,19 @@ class UserSettings {
         }
     }
     
+    static var sigFigOption: SigFigOptions {
+        get {
+            let storedValue = UserDefaults.standard.integer(forKey: "sigFigOption")
+            return storedValue == 0 ? .no : .yes(storedValue)
+        }
+        
+        set {
+            switch newValue {
+            case .no:
+                UserDefaults.standard.set(0, forKey: "sigFigOption")
+            case .yes(let x):
+                UserDefaults.standard.set(x, forKey: "sigFigOption")
+            }
+        }
+    }
 }
