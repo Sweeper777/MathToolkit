@@ -73,4 +73,20 @@ class UserSettings {
     static var pref180Degrees: Double {
         return pref90Degrees * 2
     }
+    
+    static var aValue: Double {
+        get { return UserDefaults.standard.double(forKey: "aValue") }
+        set { UserDefaults.standard.set(newValue, forKey: "aValue") }
+    }
+    
+    static var bValue: Double {
+        get { return UserDefaults.standard.double(forKey: "bValue") }
+        set { UserDefaults.standard.set(newValue, forKey: "bValue") }
+    }
+    
+    static var cValue: Double {
+        get { return UserDefaults.standard.double(forKey: "cValue") }
+        set { UserDefaults.standard.set(newValue, forKey: "cValue") }
+    }
 }
+
