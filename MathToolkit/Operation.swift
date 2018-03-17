@@ -43,6 +43,12 @@ struct JsonOperation: Codable, OperationProtocol {
     let implementations: [OperationImplementation]
     
     func calculate(inputs: [String : Double]) -> [OperationResult]? {
-        return nil
+        var evaluator = Evaluator.shared
+        evaluator.angleMeasurementMode = UserDefaults.standard.bool(forKey: "useDegrees") ? .degrees : .radians
+        var results = [OperationResult]()
+        var substitutions = inputs
+        substitutions["pref90"] = UserSettings.pref90Degrees
+        substitutions["pref180"] = UserSettings.pref180Degrees
+        substitutions["pi"] = UserSettings.valueOfPi
     }
 }
