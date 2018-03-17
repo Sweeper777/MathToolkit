@@ -1,0 +1,79 @@
+[
+    {
+      "name": "Circle",
+      "image": null,
+      "category": "2D Figures",
+      "inputs": [
+        {
+          "name": "r",
+          "description": "Radius of the circle",
+          "rejectFloatingPoint": false
+        },
+        {
+          "name": "d",
+          "description": "Diameter of the circle",
+          "rejectFloatingPoint": false
+        },
+        {
+          "name": "P",
+          "description": "Circumference of the circle",
+          "rejectFloatingPoint": false
+        },
+        {
+          "name": "A",
+          "description": "Area of the circle",
+          "rejectFloatingPoint": false
+        }
+      ],
+      "implementations": [
+        {
+          "resultName": "Area",
+          "expression": "$r * $r * $pi"
+        },
+        {
+          "resultName": "Perimeter",
+          "expression": "$r * 2 * $pi"
+        },
+        {
+          "resultName": "Diameter",
+          "expression": "$r * 2"
+        },
+        {
+          "resultName": "Area",
+          "expression": "($d / 2) * ($d / 2) * $pi"
+        },
+        {
+          "resultName": "Perimeter",
+          "expression": "($d / 2) * 2 * $pi"
+        },
+        {
+          "resultName": "Radius",
+          "expression": "$d / 2"
+        },
+        {
+          "resultName": "Diameter",
+          "expression": "sqrt($A / $pi) * 2"
+        },
+        {
+          "resultName": "Perimeter",
+          "expression": "sqrt($A / $pi) * 2 * $pi"
+        },
+        {
+          "resultName": "Radius",
+          "expression": "sqrt($A / $pi)"
+        },
+        {
+          "resultName": "Diameter",
+          "expression": "$P / $pi"
+        },
+        {
+          "resultName": "Area",
+          "expression": "($P / $pi / 2) ** 2 * $pi"
+        },
+        {
+          "resultName": "Radius",
+          "expression": "$P / $pi / 2"
+        }
+      ]
+    }
+  ]
