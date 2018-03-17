@@ -50,5 +50,17 @@ struct JsonOperation: Codable, OperationProtocol {
         substitutions["pref90"] = UserSettings.pref90Degrees
         substitutions["pref180"] = UserSettings.pref180Degrees
         substitutions["pi"] = UserSettings.valueOfPi
+        for impl in implementations {
+            if let expression = try? Expression(string: impl.expression), let result = try? evaluator.evaluate(expression, substitutions: substitutions) {
+                let fromValues = String(format: "From %@".localized, impl.fromValues.joined(separator: ", "))
+                results.append(OperationResult(
+                    name: impl.resultName,
+                    from: fromValues,
+                    value: "\(UserSettings.sigFigOption.correct(result))"
+                    )
+                )
+            }
+        }
+        return results
     }
 }
