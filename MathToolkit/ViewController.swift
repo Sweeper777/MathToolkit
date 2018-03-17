@@ -12,7 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let json = try! Data(contentsOf: Bundle.main.url(forResource: "operations", withExtension: "json")!)
+        let decoder = JSONDecoder()
+        let operations = try! decoder.decode([JsonOperation].self, from: json)
+        let circle = operations.first!
+        let results = circle.calculate(inputs: ["r": 2, "d": 4])!
+        for result in results {
+            print("\(result.name): \(result.value), from: \(result.from)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
