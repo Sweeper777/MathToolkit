@@ -1,4 +1,7 @@
 import Foundation
+import MathParser
+import Regexer
+import SwiftyUtils
 
 struct OperationInput: Codable {
     let name: String
@@ -25,11 +28,12 @@ struct OperationImplementation: Codable {
     let resultName: String
     let expression: String
     var fromValues: [String] {
-        let matches = "\\$(\\w)".r!.findAll(in: expression)
-        var variablesUsed = matches.map { $0.group(at: 1)! }
+        let captures = (expression as NSString).rx_captures(forGroup: 1, withPattern: "\\$(\\w+)")!
+        var variablesUsed = captures.map { ($0 as! RXCapture).text! }
         variablesUsed.remove(objects: "pref90")
         variablesUsed.remove(objects: "pref180")
         variablesUsed.remove(objects: "pi")
+        variablesUsed = Array(Set(variablesUsed))
         return variablesUsed
     }
 }
