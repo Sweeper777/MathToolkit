@@ -16,7 +16,7 @@ protocol OperationProtocol {
     var name: String { get }
     var inputs: [OperationInput] { get }
     var image: String? { get }
-    var description: String { get }
+    var category: String { get }
     
     func calculate (inputs: [String: Double]) -> [OperationResult]?
 }
@@ -38,7 +38,7 @@ struct JsonOperation: Codable, OperationProtocol {
     let name: String
     let inputs: [OperationInput]
     let image: String?
-    let description: String
+    let category: String
     
     let implementations: [OperationImplementation]
     
