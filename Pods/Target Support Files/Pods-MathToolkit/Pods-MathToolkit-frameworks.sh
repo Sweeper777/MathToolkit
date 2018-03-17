@@ -102,10 +102,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CrossroadRegex/Regex.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DDMathParser/MathParser.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Regexer/Regexer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework"
@@ -113,10 +113,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CrossroadRegex/Regex.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DDMathParser/MathParser.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Regexer/Regexer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework"

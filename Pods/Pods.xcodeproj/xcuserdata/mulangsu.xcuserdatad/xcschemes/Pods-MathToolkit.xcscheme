@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "011C0C570DDCF49EABEFD20B933502C2"
+               BlueprintIdentifier = "48733CD6FE5270B0033DA4BE8D4BC787"
                BuildableName = "Pods_MathToolkit.framework"
                BlueprintName = "Pods-MathToolkit"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "011C0C570DDCF49EABEFD20B933502C2"
+            BlueprintIdentifier = "48733CD6FE5270B0033DA4BE8D4BC787"
             BuildableName = "Pods_MathToolkit.framework"
             BlueprintName = "Pods-MathToolkit"
             ReferencedContainer = "container:Pods.xcodeproj">

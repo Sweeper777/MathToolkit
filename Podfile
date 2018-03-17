@@ -14,5 +14,5 @@ target 'MathToolkit' do
   pod 'SwiftRandom'
   pod 'DDMathParser', :git => 'https://github.com/davedelong/DDMathParser.git', :branch => 'swift4'
   pod 'MGSwipeTableCell'
-  pod 'CrossroadRegex'
+  pod 'Regexer'
 end

@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A37DDCB20552BA20086A294 /* EvaluatorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37DDCA20552BA20086A294 /* EvaluatorExtensions.swift */; };
+		5A37DDCD20552DEE0086A294 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37DDCC20552DEE0086A294 /* UserSettings.swift */; };
+		5A37DDCF205539010086A294 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37DDCE205539010086A294 /* StringExtensions.swift */; };
+		5A3D0E20205C6052005313E7 /* operations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D0E1F205C6052005313E7 /* operations.json */; };
 		5AEBB0CC205407B800008359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CB205407B800008359 /* AppDelegate.swift */; };
 		5AEBB0CE205407B800008359 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CD205407B800008359 /* ViewController.swift */; };
 		5AEBB0D1205407B800008359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CF205407B800008359 /* Main.storyboard */; };
 		5AEBB0D3205407B800008359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBB0D2205407B800008359 /* Assets.xcassets */; };
 		5AEBB0D6205407B800008359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBB0D4205407B800008359 /* LaunchScreen.storyboard */; };
 		5AEBB0DE2054082900008359 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0DD2054082900008359 /* Operation.swift */; };
+		7C50E36256D8E1D4DBBC840C /* Pods_MathToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF8D2D721900460381D04F4 /* Pods_MathToolkit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DEAC98FF11E4621615F6EDA /* Pods-MathToolkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathToolkit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathToolkit/Pods-MathToolkit.debug.xcconfig"; sourceTree = "<group>"; };
+		5A37DDCA20552BA20086A294 /* EvaluatorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluatorExtensions.swift; sourceTree = "<group>"; };
+		5A37DDCC20552DEE0086A294 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		5A37DDCE205539010086A294 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		5A3D0E1F205C6052005313E7 /* operations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = operations.json; sourceTree = "<group>"; };
 		5AEBB0C8205407B800008359 /* MathToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEBB0CB205407B800008359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEBB0CD205407B800008359 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		5AEBB0D5205407B800008359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AEBB0D7205407B800008359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AEBB0DD2054082900008359 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		7762BBA5F1E0FB88AAC881AE /* Pods-MathToolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathToolkit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathToolkit/Pods-MathToolkit.release.xcconfig"; sourceTree = "<group>"; };
+		AEF8D2D721900460381D04F4 /* Pods_MathToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C50E36256D8E1D4DBBC840C /* Pods_MathToolkit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				5AEBB0CA205407B800008359 /* MathToolkit */,
 				5AEBB0C9205407B800008359 /* Products */,
+				5FE8E59B11FE5FD9C62D2C1F /* Pods */,
+				D0BADD5E2C3B66421FFF2E64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +78,29 @@
 				5AEBB0D4205407B800008359 /* LaunchScreen.storyboard */,
 				5AEBB0D7205407B800008359 /* Info.plist */,
 				5AEBB0DD2054082900008359 /* Operation.swift */,
+				5A37DDCA20552BA20086A294 /* EvaluatorExtensions.swift */,
+				5A37DDCE205539010086A294 /* StringExtensions.swift */,
+				5A37DDCC20552DEE0086A294 /* UserSettings.swift */,
+				5A3D0E1F205C6052005313E7 /* operations.json */,
 			);
 			path = MathToolkit;
+			sourceTree = "<group>";
+		};
+		5FE8E59B11FE5FD9C62D2C1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DEAC98FF11E4621615F6EDA /* Pods-MathToolkit.debug.xcconfig */,
+				7762BBA5F1E0FB88AAC881AE /* Pods-MathToolkit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0BADD5E2C3B66421FFF2E64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEF8D2D721900460381D04F4 /* Pods_MathToolkit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AEBB0DA205407B800008359 /* Build configuration list for PBXNativeTarget "MathToolkit" */;
 			buildPhases = (
+				6D9C237EB8A1FF8C802FBE38 /* [CP] Check Pods Manifest.lock */,
 				5AEBB0C4205407B800008359 /* Sources */,
 				5AEBB0C5205407B800008359 /* Frameworks */,
 				5AEBB0C6205407B800008359 /* Resources */,
+				91772F90BCD5C2D3FBADD4CD /* [CP] Embed Pods Frameworks */,
+				2CFBEED8C9D3FCC2841DCCD3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,19 +168,93 @@
 				5AEBB0D6205407B800008359 /* LaunchScreen.storyboard in Resources */,
 				5AEBB0D3205407B800008359 /* Assets.xcassets in Resources */,
 				5AEBB0D1205407B800008359 /* Main.storyboard in Resources */,
+				5A3D0E20205C6052005313E7 /* operations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CFBEED8C9D3FCC2841DCCD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathToolkit/Pods-MathToolkit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9C237EB8A1FF8C802FBE38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathToolkit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91772F90BCD5C2D3FBADD4CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MathToolkit/Pods-MathToolkit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DDMathParser/MathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/Regexer/Regexer.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftRandom/SwiftRandom.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Regexer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRandom.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUtils.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathToolkit/Pods-MathToolkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AEBB0C4205407B800008359 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A37DDCF205539010086A294 /* StringExtensions.swift in Sources */,
 				5AEBB0CE205407B800008359 /* ViewController.swift in Sources */,
 				5AEBB0CC205407B800008359 /* AppDelegate.swift in Sources */,
 				5AEBB0DE2054082900008359 /* Operation.swift in Sources */,
+				5A37DDCD20552DEE0086A294 /* UserSettings.swift in Sources */,
+				5A37DDCB20552BA20086A294 /* EvaluatorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +389,13 @@
 		};
 		5AEBB0DB205407B800008359 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEAC98FF11E4621615F6EDA /* Pods-MathToolkit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9MW74DJ4Y;
 				INFOPLIST_FILE = MathToolkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.sweeper777.MathToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,11 +406,13 @@
 		};
 		5AEBB0DC205407B800008359 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7762BBA5F1E0FB88AAC881AE /* Pods-MathToolkit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9MW74DJ4Y;
 				INFOPLIST_FILE = MathToolkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.sweeper777.MathToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
