@@ -15,4 +15,5 @@ target 'MathToolkit' do
   pod 'DDMathParser', :git => 'https://github.com/davedelong/DDMathParser.git', :branch => 'swift4'
   pod 'MGSwipeTableCell'
   pod 'Regexer'
+  pod 'Eureka'
 end
