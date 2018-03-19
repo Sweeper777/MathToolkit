@@ -13,9 +13,11 @@ class OperationsListController: UITableViewController {
         super.viewDidAppear(animated)
         
         if operations.isEmpty {
+            EZLoadingActivity.show("Loading...".localized, disableUI: true)
             loadOperations {
                 [weak self] in
                 self?.tableView.reloadData()
+                EZLoadingActivity.hide()
             }
         }
     func loadOperations(completion: @escaping () -> Void) {
