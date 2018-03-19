@@ -44,5 +44,9 @@ class OperationsListController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return operations[section].first?.category
+    }
+    
 }
 
