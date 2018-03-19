@@ -9,6 +9,15 @@ class OperationsListController: UITableViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if operations.isEmpty {
+            loadOperations {
+                [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
     func loadOperations(completion: @escaping () -> Void) {
         {
             [weak self] in
