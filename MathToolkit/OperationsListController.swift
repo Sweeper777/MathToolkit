@@ -34,5 +34,9 @@ class OperationsListController: UITableViewController {
         return operations.count
     }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return operations[section].count
+    }
+    
 }
 
