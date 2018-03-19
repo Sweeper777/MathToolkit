@@ -30,5 +30,9 @@ class OperationsListController: UITableViewController {
         } ~> completion
     }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return operations.count
+    }
+    
 }
 
