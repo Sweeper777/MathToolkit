@@ -5,6 +5,10 @@ class OperationsListController: UITableViewController {
 
     var operations: [[OperationProtocol]] = []
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     func loadOperations(completion: @escaping () -> Void) {
         {
             [weak self] in
