@@ -48,5 +48,10 @@ class OperationsListController: UITableViewController {
         return operations[section].first?.category
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showOperation", sender: indexPath)
+    }
+    
 }
 
