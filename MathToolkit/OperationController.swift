@@ -22,6 +22,10 @@ class OperationController: FormViewController {
                 row.title = "\(input.name) = "
                 row.cell.titleLabel?.font = UIFont(name: "Times New Roman", size: UIFont.systemFontSize)
             }
+            .cellUpdate({ (cell, row) in
+                row.cell.textField.textAlignment = NSTextAlignment.left
+                row.cell.textField.keyboardType = .numbersAndPunctuation
+            })
         }
         
         form +++ section
