@@ -20,6 +20,13 @@ class OperationsListController: UITableViewController {
                 EZLoadingActivity.hide()
             }
         }
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: false)
+        }
+        
+    }
+    
     func loadOperations(completion: @escaping () -> Void) {
         {
             [weak self] in
