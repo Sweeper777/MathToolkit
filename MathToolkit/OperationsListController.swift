@@ -53,5 +53,10 @@ class OperationsListController: UITableViewController {
         performSegue(withIdentifier: "showOperation", sender: indexPath)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? DataPasserController, let indexPath = sender! as? IndexPath {
+            vc.operation = operations[indexPath.section][indexPath.row]
+        }
+    }
 }
 
