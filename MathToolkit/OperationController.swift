@@ -13,6 +13,15 @@ class OperationController: FormViewController {
         }
         self.title = op.name.localized
         
+        form +++ ButtonRow() {
+            row in
+            row.title = "Clear All Inputs".localized
+        }.onCellSelection({ [unowned self] (cell, row) in
+            self.form.allRows.forEach {
+                $0.baseValue = nil
+                $0.updateCell()
+            }
+        })
         let section = Section("inputs".localized)
         
         for input in operation.inputs {
