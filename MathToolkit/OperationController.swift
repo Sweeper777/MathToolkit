@@ -22,6 +22,10 @@ class OperationController: FormViewController {
                 $0.updateCell()
             }
         })
+            .cellUpdate({ (cell, row) in
+            cell.textLabel?.textColor = UIColor(hex: "3b7b3b")
+        })
+        
         let section = Section("inputs".localized)
         
         for input in operation.inputs {
