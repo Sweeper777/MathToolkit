@@ -2,7 +2,7 @@
   {
     "name": "Circle",
     "image": null,
-    "category": "2D Figures",
+    "category": "Circles",
     "inputs": [
       {
         "name": "r",
