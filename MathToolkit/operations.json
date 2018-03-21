@@ -3,6 +3,43 @@
     "name": "Trapezium",
     "image": "trapezium",
     "category": "2D Figures",
+    "inputs": [
+      {
+        "name": "b1",
+        "description": "The upper base of the trapezium",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "b2",
+        "description": "The lower base of the trapezium",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "h",
+        "description": "The height (altitude) of the trapezium",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s1",
+        "description": "The length of the trapezium's left side",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s2",
+        "description": "The length of the trapezium's right side",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "P",
+        "description": "The perimeter of the trapizium",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "A",
+        "description": "The area of the trapizium",
+        "rejectFloatingPoint": false
+      }
+    ],
   },
   {
     "name": "Circle",
