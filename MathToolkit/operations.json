@@ -40,6 +40,31 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Area",
+        "expression": "($b1 + $b2) * $h / 2"
+      },
+      {
+        "resultName": "Perimeter",
+        "expression": "$b1 + $b2 + $s1 + $s2"
+      },
+      {
+        "resultName": "Right Side Length",
+        "expression": "$P - $s1 - $b1 - $b2"
+      },
+      {
+        "resultName": "Left Side Length",
+        "expression": "$P - $s2 - $b1 - $b2"
+      },
+      {
+        "resultName": "Lower Base",
+        "expression": "$P - $s1 - $s2 - $b1"
+      },
+      {
+        "resultName": "Area",
+        "expression": "($P - $s1 - $s2) * $h / 2"
+      },
   },
   {
     "name": "Circle",
