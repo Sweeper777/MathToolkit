@@ -16,4 +16,6 @@ target 'MathToolkit' do
   pod 'MGSwipeTableCell'
   pod 'Regexer'
   pod 'Eureka'
+  pod 'ViewRow', :git => 'https://github.com/EurekaCommunity/ViewRow'
+  pod 'RFKeyboardToolbar'
 end

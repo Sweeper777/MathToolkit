@@ -4,12 +4,15 @@ PODS:
   - EZLoadingActivity (1.01)
   - MGSwipeTableCell (1.6.6)
   - Regexer (1.3.3)
+  - RFKeyboardToolbar (1.3)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SCLAlertView (0.7.0)
   - SwiftRandom (1.0.0)
   - SwiftyUtils (2.0.0)
+  - ViewRow (0.3.0):
+    - Eureka (>= 4.0.0)
 
 DEPENDENCIES:
   - DDMathParser (from `https://github.com/davedelong/DDMathParser.git`, branch `swift4`)
@@ -17,11 +20,13 @@ DEPENDENCIES:
   - EZLoadingActivity
   - MGSwipeTableCell
   - Regexer
+  - RFKeyboardToolbar
   - RxCocoa
   - RxSwift
   - SCLAlertView (from `https://github.com/ahmedsafadii/SCLAlertView-Swift.git`)
   - SwiftRandom
   - SwiftyUtils
+  - ViewRow (from `https://github.com/EurekaCommunity/ViewRow`)
 
 EXTERNAL SOURCES:
   DDMathParser:
@@ -29,6 +34,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/davedelong/DDMathParser.git
   SCLAlertView:
     :git: https://github.com/ahmedsafadii/SCLAlertView-Swift.git
+  ViewRow:
+    :git: https://github.com/EurekaCommunity/ViewRow
 
 CHECKOUT OPTIONS:
   DDMathParser:
@@ -37,6 +44,9 @@ CHECKOUT OPTIONS:
   SCLAlertView:
     :commit: 90826ee643e319375aadd6415aaa0e8fce643766
     :git: https://github.com/ahmedsafadii/SCLAlertView-Swift.git
+  ViewRow:
+    :commit: fbfc539796f8a00102a671b338c1c3bbb39a6b89
+    :git: https://github.com/EurekaCommunity/ViewRow
 
 SPEC CHECKSUMS:
   DDMathParser: 74cddd0aa652cfed79e68fdd076f1ee63ab43a16
@@ -44,12 +54,14 @@ SPEC CHECKSUMS:
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
   MGSwipeTableCell: c3bc6e261e7bc06c112909fe3fb8205de286082c
   Regexer: d313fc8028f02e9389ce574ed3e5818b62207997
+  RFKeyboardToolbar: c96a7d9458564d1fedc8ef6844b6c467934aade2
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftRandom: 437275c63500ddf5a565cbd56996fb23f12cfc3d
   SwiftyUtils: ae914aa96b5672e9282904771e5e5b44d2e307d6
+  ViewRow: e278428ff53da5eab18b191d3e19a16f3e299fc1
 
-PODFILE CHECKSUM: 04dfbe2223c98732f4c582aad13c32fc2a2d51b1
+PODFILE CHECKSUM: 39f5913c24afb4a44d32ac6b6bb2b8e561368579
 
 COCOAPODS: 1.3.1

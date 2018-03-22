@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8F533C7C6B8F77BC217264576172F405"
-               BuildableName = "SCLAlertView.framework"
-               BlueprintName = "SCLAlertView"
+               BlueprintIdentifier = "5583690E6A773BFDA47F5F5E46054F96"
+               BuildableName = "RFKeyboardToolbar.framework"
+               BlueprintName = "RFKeyboardToolbar"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8F533C7C6B8F77BC217264576172F405"
-            BuildableName = "SCLAlertView.framework"
-            BlueprintName = "SCLAlertView"
+            BlueprintIdentifier = "5583690E6A773BFDA47F5F5E46054F96"
+            BuildableName = "RFKeyboardToolbar.framework"
+            BlueprintName = "RFKeyboardToolbar"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

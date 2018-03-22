@@ -106,24 +106,28 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RFKeyboardToolbar/RFKeyboardToolbar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Regexer/Regexer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftRandom/SwiftRandom.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ViewRow/ViewRow.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DDMathParser/MathParser.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RFKeyboardToolbar/RFKeyboardToolbar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Regexer/Regexer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftRandom/SwiftRandom.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ViewRow/ViewRow.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
