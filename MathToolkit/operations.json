@@ -65,6 +65,31 @@
         "resultName": "Area",
         "expression": "($P - $s1 - $s2) * $h / 2"
       },
+      {
+        "resultName": "Upper Base",
+        "expression": "$P - $s1 - $s2 - $b2"
+      },
+      {
+        "resultName": "Height",
+        "expression": "($A * 2) / ($b1 + $b2)"
+      },
+      {
+        "resultName": "Height",
+        "expression": "($A * 2) / ($P - $s1 - $s2)"
+      },
+      {
+        "resultName": "Lower Base",
+        "expression": "$A * 2 / $h - $b1"
+      },
+      {
+        "resultName": "Upper Base",
+        "expression": "$A * 2 / $h - $b2"
+      },
+      {
+        "resultName": "Perimeter",
+        "expression": "$A * 2 / $h + $1 + $2"
+      }
+    ]
   },
   {
     "name": "Circle",
