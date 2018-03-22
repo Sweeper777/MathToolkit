@@ -13,6 +13,17 @@ class OperationController: FormViewController {
         }
         self.title = op.name.localized
         
+        if let imageName = operation.image {
+            form +++ ViewRow<UIImageView>() {
+                row in
+            }.cellSetup({ (cell, row) in
+                let imageView = UIImageView(image: UIImage(named: imageName))
+                imageView.contentMode = .scaleAspectFit
+                imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
+                cell.view = imageView
+            })
+        }
+        
         form +++ ButtonRow() {
             row in
             row.title = "Clear All Inputs".localized
