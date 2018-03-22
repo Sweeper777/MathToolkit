@@ -50,6 +50,7 @@ class OperationController: FormViewController {
                     row.value = (row.value ?? "") + "+"
                     row.updateCell()
                 }, for: .touchUpInside)
+                row.cell.textField.inputAccessoryView = RFKeyboardToolbar(buttons: [plus!])
             }
             .cellUpdate({ (cell, row) in
                 row.cell.textField.textAlignment = NSTextAlignment.left
