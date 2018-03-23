@@ -60,4 +60,8 @@ class OperationController: FormViewController {
         
         form +++ section
     }
+    
+    @IBAction func calculate() {
+        
+    }
 }
