@@ -7,4 +7,9 @@ class ResultController: UITableViewController {
     override func viewDidLoad() {
         title = "Results".localized
     }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return results?.count ?? 1
+    }
+    
 }
