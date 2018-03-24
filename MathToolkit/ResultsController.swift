@@ -20,4 +20,15 @@ class ResultController: UITableViewController {
         return results?[section].first?.name.localized
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MGSwipeTableCell
+        if let result = results?[indexPath.section][indexPath.row] {
+            cell.textLabel?.text = result.value.localized
+            cell.detailTextLabel?.text = result.from
+            
+        } else {
+            cell.textLabel?.text = "No Results".localized
+        }
+        return cell
+    }
 }
