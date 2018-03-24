@@ -16,4 +16,8 @@ class ResultController: UITableViewController {
         return results?[section].count ?? 1
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return results?[section].first?.name.localized
+    }
+    
 }
