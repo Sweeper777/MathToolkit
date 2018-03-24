@@ -10,9 +10,15 @@
 		5A37DDCB20552BA20086A294 /* EvaluatorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37DDCA20552BA20086A294 /* EvaluatorExtensions.swift */; };
 		5A37DDCD20552DEE0086A294 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37DDCC20552DEE0086A294 /* UserSettings.swift */; };
 		5A37DDCF205539010086A294 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37DDCE205539010086A294 /* StringExtensions.swift */; };
+		5A3A74482062EC8B002CAC17 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A74472062EC8B002CAC17 /* ResultsController.swift */; };
+		5A3CA800205D1392002367E9 /* MySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA7FF205D1392002367E9 /* MySplitViewController.swift */; };
+		5A3CA802205D13F8002367E9 /* OperationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA801205D13F8002367E9 /* OperationController.swift */; };
+		5A3CA804205D18FD002367E9 /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA803205D18FD002367E9 /* Threading.swift */; };
+		5A3CA806205D2880002367E9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA805205D2880002367E9 /* ArrayExtensions.swift */; };
+		5A3CA808205D30C3002367E9 /* DataPasserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA807205D30C3002367E9 /* DataPasserController.swift */; };
 		5A3D0E20205C6052005313E7 /* operations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D0E1F205C6052005313E7 /* operations.json */; };
 		5AEBB0CC205407B800008359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CB205407B800008359 /* AppDelegate.swift */; };
-		5AEBB0CE205407B800008359 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CD205407B800008359 /* ViewController.swift */; };
+		5AEBB0CE205407B800008359 /* OperationsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CD205407B800008359 /* OperationsListController.swift */; };
 		5AEBB0D1205407B800008359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CF205407B800008359 /* Main.storyboard */; };
 		5AEBB0D3205407B800008359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBB0D2205407B800008359 /* Assets.xcassets */; };
 		5AEBB0D6205407B800008359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBB0D4205407B800008359 /* LaunchScreen.storyboard */; };
@@ -25,10 +31,16 @@
 		5A37DDCA20552BA20086A294 /* EvaluatorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluatorExtensions.swift; sourceTree = "<group>"; };
 		5A37DDCC20552DEE0086A294 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		5A37DDCE205539010086A294 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		5A3A74472062EC8B002CAC17 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+		5A3CA7FF205D1392002367E9 /* MySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySplitViewController.swift; sourceTree = "<group>"; };
+		5A3CA801205D13F8002367E9 /* OperationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationController.swift; sourceTree = "<group>"; };
+		5A3CA803205D18FD002367E9 /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
+		5A3CA805205D2880002367E9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		5A3CA807205D30C3002367E9 /* DataPasserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPasserController.swift; sourceTree = "<group>"; };
 		5A3D0E1F205C6052005313E7 /* operations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = operations.json; sourceTree = "<group>"; };
 		5AEBB0C8205407B800008359 /* MathToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEBB0CB205407B800008359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AEBB0CD205407B800008359 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AEBB0CD205407B800008359 /* OperationsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsListController.swift; sourceTree = "<group>"; };
 		5AEBB0D0205407B800008359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AEBB0D2205407B800008359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AEBB0D5205407B800008359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				5AEBB0CB205407B800008359 /* AppDelegate.swift */,
-				5AEBB0CD205407B800008359 /* ViewController.swift */,
+				5AEBB0CD205407B800008359 /* OperationsListController.swift */,
+				5A3CA7FF205D1392002367E9 /* MySplitViewController.swift */,
+				5A3CA807205D30C3002367E9 /* DataPasserController.swift */,
+				5A3CA801205D13F8002367E9 /* OperationController.swift */,
+				5A3A74472062EC8B002CAC17 /* ResultsController.swift */,
 				5AEBB0CF205407B800008359 /* Main.storyboard */,
 				5AEBB0D2205407B800008359 /* Assets.xcassets */,
 				5AEBB0D4205407B800008359 /* LaunchScreen.storyboard */,
@@ -80,7 +96,9 @@
 				5AEBB0DD2054082900008359 /* Operation.swift */,
 				5A37DDCA20552BA20086A294 /* EvaluatorExtensions.swift */,
 				5A37DDCE205539010086A294 /* StringExtensions.swift */,
+				5A3CA805205D2880002367E9 /* ArrayExtensions.swift */,
 				5A37DDCC20552DEE0086A294 /* UserSettings.swift */,
+				5A3CA803205D18FD002367E9 /* Threading.swift */,
 				5A3D0E1F205C6052005313E7 /* operations.json */,
 			);
 			path = MathToolkit;
@@ -217,25 +235,31 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MathToolkit/Pods-MathToolkit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DDMathParser/MathParser.framework",
 				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/RFKeyboardToolbar/RFKeyboardToolbar.framework",
 				"${BUILT_PRODUCTS_DIR}/Regexer/Regexer.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftRandom/SwiftRandom.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewRow/ViewRow.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MathParser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RFKeyboardToolbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Regexer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRandom.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewRow.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -249,9 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3CA808205D30C3002367E9 /* DataPasserController.swift in Sources */,
 				5A37DDCF205539010086A294 /* StringExtensions.swift in Sources */,
-				5AEBB0CE205407B800008359 /* ViewController.swift in Sources */,
+				5A3CA806205D2880002367E9 /* ArrayExtensions.swift in Sources */,
+				5A3CA802205D13F8002367E9 /* OperationController.swift in Sources */,
+				5AEBB0CE205407B800008359 /* OperationsListController.swift in Sources */,
+				5A3CA800205D1392002367E9 /* MySplitViewController.swift in Sources */,
+				5A3CA804205D18FD002367E9 /* Threading.swift in Sources */,
 				5AEBB0CC205407B800008359 /* AppDelegate.swift in Sources */,
+				5A3A74482062EC8B002CAC17 /* ResultsController.swift in Sources */,
 				5AEBB0DE2054082900008359 /* Operation.swift in Sources */,
 				5A37DDCD20552DEE0086A294 /* UserSettings.swift in Sources */,
 				5A37DDCB20552BA20086A294 /* EvaluatorExtensions.swift in Sources */,
