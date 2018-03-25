@@ -53,6 +53,7 @@ class OperationController: FormViewController {
                 toolbar?.addKey("(", to: row)
                 toolbar?.addKey(")", to: row)
                 toolbar?.addKey("$", to: row)
+                row.cell.textField.inputAccessoryView = toolbar
             }
             .cellUpdate({ (cell, row) in
                 row.cell.textField.textAlignment = NSTextAlignment.left
