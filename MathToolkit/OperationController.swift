@@ -63,5 +63,13 @@ class OperationController: FormViewController {
     
     @IBAction func calculate() {
         
+fileprivate extension RFKeyboardToolbar {
+    func addKey(_ key: String, to row: TextRow) {
+        let button = RFToolbarButton(title: key)
+        button?.addEventHandler({
+            row.cell.textField.insertText(key)
+            row.value = row.cell.textField.text
+        }, for: .touchUpInside)
+        self.buttons.append(button!)
     }
 }
