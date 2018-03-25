@@ -48,7 +48,9 @@ struct JsonOperation: Codable, OperationProtocol {
     
     func calculate(inputs: [String : Double]) -> [OperationResult]? {
         var evaluator = Evaluator.shared
-        evaluator.angleMeasurementMode = UserDefaults.standard.bool(forKey: "useDegrees") ? .degrees : .radians
+        evaluator.angleMeasurementMode = UserSettings.useDegrees ? .degrees : .radians
+        let approxEq = Function(name: "approxEq", evaluator: approxEqImpl)
+        try! evaluator.registerFunction(approxEq)
         var results = [OperationResult]()
         var substitutions = inputs
         substitutions["pref90"] = UserSettings.pref90Degrees
