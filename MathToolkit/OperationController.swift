@@ -66,6 +66,15 @@ class OperationController: FormViewController {
     
     @IBAction func calculate() {
         
+    fileprivate func showError(message: String) {
+        DispatchQueue.main.async {
+            [weak self] in
+            self?.view.endEditing(true)
+            let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+            alert.addButton("OK".localized, action: {})
+            alert.showError("Oops!".localized, subTitle: message)
+        }
+    }
 fileprivate extension RFKeyboardToolbar {
     func addKey(_ key: String, to row: TextRow) {
         let button = RFToolbarButton(title: key)
