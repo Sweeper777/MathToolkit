@@ -45,12 +45,8 @@ class OperationController: FormViewController {
                 row.cell.textField.placeholder = "Enter a value...".localized
                 row.title = "\(input.name) = "
                 row.cell.titleLabel?.font = UIFont(name: "Times New Roman", size: UIFont.systemFontSize)
-                let plus = RFToolbarButton(title: "+")
-                plus?.addEventHandler({
-                    row.value = (row.value ?? "") + "+"
-                    row.updateCell()
-                }, for: .touchUpInside)
-                row.cell.textField.inputAccessoryView = RFKeyboardToolbar(buttons: [plus!])
+                let toolbar = RFKeyboardToolbar(buttons: [])
+                toolbar?.addKey("+", to: row)
             }
             .cellUpdate({ (cell, row) in
                 row.cell.textField.textAlignment = NSTextAlignment.left
