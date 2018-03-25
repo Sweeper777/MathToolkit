@@ -47,6 +47,12 @@ class OperationController: FormViewController {
                 row.cell.titleLabel?.font = UIFont(name: "Times New Roman", size: UIFont.systemFontSize)
                 let toolbar = RFKeyboardToolbar(buttons: [])
                 toolbar?.addKey("+", to: row)
+                toolbar?.addKey("-", to: row)
+                toolbar?.addKey("*", to: row)
+                toolbar?.addKey("/", to: row)
+                toolbar?.addKey("(", to: row)
+                toolbar?.addKey(")", to: row)
+                toolbar?.addKey("$", to: row)
             }
             .cellUpdate({ (cell, row) in
                 row.cell.textField.textAlignment = NSTextAlignment.left
