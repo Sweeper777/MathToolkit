@@ -123,17 +123,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="7XC-n9-wlS" kind="show" id="6XW-eY-J4E"/>
+                        <segue destination="7XC-n9-wlS" kind="show" identifier="showResults" id="6XW-eY-J4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4U-ta-RdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="1091"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Result Controller-->
         <scene sceneID="MZA-KF-MTT">
             <objects>
-                <tableViewController id="7XC-n9-wlS" sceneMemberID="viewController">
+                <tableViewController id="7XC-n9-wlS" customClass="ResultController" customModule="MathToolkit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0uw-aY-uua">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
