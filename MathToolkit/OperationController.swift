@@ -66,6 +66,17 @@ class OperationController: FormViewController {
     
     @IBAction func calculate() {
         
+    func processInputs() -> [String: Double]? {
+        let values = form.values()
+        var inputValues = [String: Double]()
+        for input in operation.inputs {
+            if let expr = values[input.name] as? String {
+                if expr.trimmed() != "" {
+                }
+            }
+        }
+        return inputValues
+    }
     fileprivate func showError(message: String) {
         DispatchQueue.main.async {
             [weak self] in
