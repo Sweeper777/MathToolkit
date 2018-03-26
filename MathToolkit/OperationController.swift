@@ -72,6 +72,23 @@ class OperationController: FormViewController {
         for input in operation.inputs {
             if let expr = values[input.name] as? String {
                 if expr.trimmed() != "" {
+                    var evaluator = Evaluator.shared
+                    evaluator.angleMeasurementMode = UserSettings.useDegrees ? .degrees : .radians
+                    if let evaluated = try? evaluator.evaluate(Expression(string: expr), substitutions: [
+                        "A": UserSettings.aValue,
+                        "B": UserSettings.bValue,
+                        "C": UserSettings.cValue,
+                        "pi": UserSettings.valueOfPi
+                        ]) {
+                        if input.rejectFloatingPoint && evaluated.truncatingRemainder(dividingBy: 1) != 0 {
+                            showError(message: String(format: "Input '%@' must be an integer!".localized, input.name))
+                            return nil
+                        }
+                        inputValues[input.name] = evaluated
+                    } else {
+                        showError(message: String(format: "An error occurred while parsing expression for input '%@'".localized, input.name))
+                        return nil
+                    }
                 }
             }
         }
