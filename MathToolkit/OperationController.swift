@@ -111,6 +111,17 @@ class OperationController: FormViewController {
         }
         return inputValues
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ResultController {
+            if let results = sender as? [[OperationResult]] {
+                if results.count != 0 {
+                    vc.results = results
+                }
+            }
+        }
+    }
+    
     fileprivate func showError(message: String) {
         DispatchQueue.main.async {
             [weak self] in
