@@ -65,7 +65,22 @@ class OperationController: FormViewController {
     }
     
     @IBAction func calculate() {
+        func doInBackground() -> [[OperationResult]]? {
+            if let inputValues = self.processInputs() {
+                let results = self.operation.calculate(inputs: inputValues) ?? []
+                let groupedResults = results.groupBy { $0.name }
+                return groupedResults
+            }
+            return nil
+        }
         
+        doInBackground ~> { [weak self] results in
+            if results != nil {
+                self?.performSegue(withIdentifier: "showResults", sender: results)
+            }
+        }
+    }
+    
     func processInputs() -> [String: Double]? {
         let values = form.values()
         var inputValues = [String: Double]()
