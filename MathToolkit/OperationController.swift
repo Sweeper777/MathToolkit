@@ -74,7 +74,9 @@ class OperationController: FormViewController {
             return nil
         }
         
+        EZLoadingActivity.show("Loading...".localized, disableUI: true)
         doInBackground ~> { [weak self] results in
+            EZLoadingActivity.hide()
             if results != nil {
                 self?.performSegue(withIdentifier: "showResults", sender: results)
             }
