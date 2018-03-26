@@ -32,4 +32,10 @@ class ResultController: UITableViewController {
         }
         return cell
     }
+    
+    func showSuccess(message: String) {
+        let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        alert.addButton("OK".localized, action: {})
+        alert.showSuccess("Success!".localized, subTitle: message)
+    }
 }
