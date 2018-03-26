@@ -28,6 +28,7 @@ class ResultController: UITableViewController {
             
         } else {
             cell.textLabel?.text = "No Results".localized
+            cell.detailTextLabel?.text = ""
         }
         return cell
     }
