@@ -32,6 +32,8 @@ class ResultController: UITableViewController {
                 return true
             }
             cell.leftButtons = [copyButton]
+            if let value = Double(cell.textLabel!.text!) {
+            }
             
         } else {
             cell.textLabel?.text = "No Results".localized
