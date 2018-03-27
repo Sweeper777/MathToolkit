@@ -2,6 +2,9 @@ import UIKit
 import Eureka
 import ViewRow
 import RFKeyboardToolbar
+import SCLAlertView
+import MathParser
+import EZLoadingActivity
 
 class OperationController: FormViewController {
     var operation: OperationProtocol!
@@ -131,6 +134,8 @@ class OperationController: FormViewController {
             alert.showError("Oops!".localized, subTitle: message)
         }
     }
+}
+
 fileprivate extension RFKeyboardToolbar {
     func addKey(_ key: String, to row: TextRow) {
         let button = RFToolbarButton(title: key)
