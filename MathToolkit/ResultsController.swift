@@ -25,6 +25,13 @@ class ResultController: UITableViewController {
         if let result = results?[indexPath.section][indexPath.row] {
             cell.textLabel?.text = result.value.localized
             cell.detailTextLabel?.text = result.from
+            let copyButton = MGSwipeButton(title: "Copy", backgroundColor: .gray)
+            copyButton.callback = { [weak self] cell in
+                UIPasteboard.general.string = cell.textLabel?.text as String?
+                self?.showSuccess(message: "Copied to clipboard!".localized)
+                return true
+            }
+            cell.leftButtons = [copyButton]
             
         } else {
             cell.textLabel?.text = "No Results".localized
