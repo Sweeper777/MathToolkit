@@ -33,6 +33,13 @@ class ResultController: UITableViewController {
             }
             cell.leftButtons = [copyButton]
             if let value = Double(cell.textLabel!.text!) {
+                let addToA = MGSwipeButton(title: "➔A", backgroundColor: UIColor(hex: "3b7b3b"))
+                addToA.callback = { [weak self] cell in
+                    UserSettings.aValue = value
+                    self?.showSuccess(message: "Saved to variable A!".localized)
+                    return true
+                }
+                
             }
             
         } else {
