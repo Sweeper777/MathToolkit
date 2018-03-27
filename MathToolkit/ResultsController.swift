@@ -40,6 +40,13 @@ class ResultController: UITableViewController {
                     return true
                 }
                 
+                let addToB = MGSwipeButton(title: "➔B", backgroundColor: UIColor(hex: "3b7b3b").darker())
+                addToB.callback = { [weak self] cell in
+                    UserSettings.bValue = value
+                    self?.showSuccess(message: "Saved to variable B!".localized)
+                    return true
+                }
+                
             }
             
         } else {
