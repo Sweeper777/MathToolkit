@@ -1,5 +1,6 @@
 import UIKit
 import MGSwipeTableCell
+import SCLAlertView
 
 class ResultController: UITableViewController {
     var results: [[OperationResult]]!
@@ -54,6 +55,7 @@ class ResultController: UITableViewController {
                     return true
                 }
                 
+                cell.rightButtons = [addToC, addToB, addToA]
             }
             
         } else {
