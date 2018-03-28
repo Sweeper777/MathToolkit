@@ -57,7 +57,10 @@ struct JsonOperation: Codable, OperationProtocol {
         substitutions["pref180"] = UserSettings.pref180Degrees
         substitutions["pi"] = UserSettings.valueOfPi
         for impl in implementations {
-            if let expression = try? Expression(string: impl.expression), let result = try? evaluator.evaluate(expression, substitutions: substitutions) {
+            if let expression = try? Expression(string: impl.expression) {
+                do {
+                    let result = try evaluator.evaluate(expression, substitutions: substitutions)
+                    let fromValues = String(format: "From %@".localized, impl.fromValues.joined(separator: ", "))
                     if impl.resultName.hasPrefix("'") && impl.resultName.hasSuffix("'") {
                         let value = (result == 1 ? "True" : "False").localized
                         results.append(OperationResult(
@@ -74,6 +77,9 @@ struct JsonOperation: Codable, OperationProtocol {
                             )
                         )
                     }
+                } catch {
+                    print(error)
+                }
             }
         }
         return results
