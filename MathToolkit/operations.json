@@ -167,5 +167,10 @@
         "expression": "$P / $pi / 2"
       }
     ]
+  },
+  {
+    "name": "Triangle",
+    "image": "triangle",
+    "category": "Triangles",
   }
 ]
