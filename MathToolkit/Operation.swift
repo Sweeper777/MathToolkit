@@ -58,13 +58,22 @@ struct JsonOperation: Codable, OperationProtocol {
         substitutions["pi"] = UserSettings.valueOfPi
         for impl in implementations {
             if let expression = try? Expression(string: impl.expression), let result = try? evaluator.evaluate(expression, substitutions: substitutions) {
-                let fromValues = String(format: "From %@".localized, impl.fromValues.joined(separator: ", "))
-                results.append(OperationResult(
-                    name: impl.resultName,
-                    from: fromValues,
-                    value: "\(UserSettings.sigFigOption.correct(result))"
-                    )
-                )
+                    if impl.resultName.hasPrefix("'") && impl.resultName.hasSuffix("'") {
+                        let value = (result == 1 ? "True" : "False").localized
+                        results.append(OperationResult(
+                            name: String(impl.resultName.dropFirst().dropLast()),
+                            from: fromValues,
+                            value: value
+                            )
+                        )
+                    } else {
+                        results.append(OperationResult(
+                            name: impl.resultName,
+                            from: fromValues,
+                            value: "\(UserSettings.sigFigOption.correct(result))"
+                            )
+                        )
+                    }
             }
         }
         return results
