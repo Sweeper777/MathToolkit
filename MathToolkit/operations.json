@@ -172,5 +172,42 @@
     "name": "Triangle",
     "image": "triangle",
     "category": "Triangles",
+    "inputs": [
+      {
+        "name": "b",
+        "description": "The base of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "h",
+        "description": "The height/altitude of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s1",
+        "description": "One of the side lengths of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s2",
+        "description": "One of the side lengths of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s3",
+        "description": "One of the side lengths  of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "P",
+        "description": "The perimeter of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "A",
+        "description": "The area of the triangle",
+        "rejectFloatingPoint": false
+      }
+    ],
   }
 ]
