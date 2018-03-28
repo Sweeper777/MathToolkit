@@ -209,5 +209,23 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Area",
+        "expression": "$b * $h / 2"
+      },
+      {
+        "resultName": "Base",
+        "expression": "2 * $A / $h"
+      },
+      {
+        "resultName": "Height",
+        "expression": "2 * $A / $b"
+      },
+      {
+        "resultName": "Perimeter",
+        "expression": "$s1 + $s2 + $s3"
+      },
+    ]
   }
 ]
