@@ -226,6 +226,26 @@
         "resultName": "Perimeter",
         "expression": "$s1 + $s2 + $s3"
       },
+      {
+        "resultName": "Side Length 1",
+        "expression": "$P - $s2 - $s3"
+      },
+      {
+        "resultName": "Side Length 2",
+        "expression": "$P - $s1 - $s3"
+      },
+      {
+        "resultName": "Side Length 3",
+        "expression": "$P - $s1 - $s2"
+      },
+      {
+        "resultName": "Area",
+        "expression": "sqrt((($s1 + $s2 + $s3) / 2) * ((($s1 + $s2 + $s3) / 2) - $s1) * ((($s1 + $s2 + $s3) / 2) - $s2) * ((($s1 + $s2 + $s3) / 2) - $s3))"
+      },
+      {
+        "resultName": "'Is Right Angled'",
+        "expression": "approxEq($s1 ** 2 + $s2 ** 2, $s3 ** 2) || approxEq($s2 ** 2 + $s3 ** 2, $s1 ** 2) || approxEq($s1 ** 2 + $s3 ** 2, $s2 ** 2)"
+      }
     ]
   }
 ]
