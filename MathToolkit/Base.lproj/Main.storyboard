@@ -42,7 +42,14 @@
                             <outlet property="delegate" destination="aRb-ry-ugK" id="3rO-Qn-wpd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Operations" id="OyB-gs-90n"/>
+                    <navigationItem key="navigationItem" title="Operations" id="OyB-gs-90n">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="m6d-C8-cQg">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ikV-wB-xvX" kind="presentation" modalPresentationStyle="formSheet" id="lFs-Fp-yUb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="cqb-KG-EeL" kind="showDetail" identifier="showOperation" id="ri2-77-oCL"/>
                     </connections>
@@ -50,6 +57,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSy-nD-fLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="954" y="263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w63-Bj-Wlm">
+            <objects>
+                <navigationController id="ikV-wB-xvX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0HI-KP-skf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="N9E-U1-HoH" kind="relationship" relationship="rootViewController" id="3c7-xT-aP8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Tg-Bv-JjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="262"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Uvw-dk-Scj">
+            <objects>
+                <viewController id="N9E-U1-HoH" customClass="SettingsController" customModule="MathToolkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TUP-Fh-OHt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xIM-wz-PfD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="b14-7O-Aj8">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="3Wt-MQ-Y1o">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="done" destination="N9E-U1-HoH" id="Grh-BZ-r2G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gS4-og-M41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2532" y="262"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JVS-qS-Bzf">
@@ -175,6 +225,9 @@
             <point key="canvasLocation" x="1782" y="1091"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ri2-77-oCL"/>
     </inferredMetricsTieBreakers>
