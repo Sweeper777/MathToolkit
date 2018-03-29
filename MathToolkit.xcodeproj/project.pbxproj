@@ -16,6 +16,7 @@
 		5A3CA804205D18FD002367E9 /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA803205D18FD002367E9 /* Threading.swift */; };
 		5A3CA806205D2880002367E9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA805205D2880002367E9 /* ArrayExtensions.swift */; };
 		5A3CA808205D30C3002367E9 /* DataPasserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA807205D30C3002367E9 /* DataPasserController.swift */; };
+		5A3CF8A62067AE910036B161 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CF8A52067AE910036B161 /* SettingsController.swift */; };
 		5A3D0E20205C6052005313E7 /* operations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D0E1F205C6052005313E7 /* operations.json */; };
 		5AEBB0CC205407B800008359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CB205407B800008359 /* AppDelegate.swift */; };
 		5AEBB0CE205407B800008359 /* OperationsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBB0CD205407B800008359 /* OperationsListController.swift */; };
@@ -37,6 +38,7 @@
 		5A3CA803205D18FD002367E9 /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
 		5A3CA805205D2880002367E9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		5A3CA807205D30C3002367E9 /* DataPasserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPasserController.swift; sourceTree = "<group>"; };
+		5A3CF8A52067AE910036B161 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		5A3D0E1F205C6052005313E7 /* operations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = operations.json; sourceTree = "<group>"; };
 		5AEBB0C8205407B800008359 /* MathToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEBB0CB205407B800008359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				5A3CA807205D30C3002367E9 /* DataPasserController.swift */,
 				5A3CA801205D13F8002367E9 /* OperationController.swift */,
 				5A3A74472062EC8B002CAC17 /* ResultsController.swift */,
+				5A3CF8A52067AE910036B161 /* SettingsController.swift */,
 				5AEBB0CF205407B800008359 /* Main.storyboard */,
 				5AEBB0D2205407B800008359 /* Assets.xcassets */,
 				5AEBB0D4205407B800008359 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3CA808205D30C3002367E9 /* DataPasserController.swift in Sources */,
+				5A3CF8A62067AE910036B161 /* SettingsController.swift in Sources */,
 				5A37DDCF205539010086A294 /* StringExtensions.swift in Sources */,
 				5A3CA806205D2880002367E9 /* ArrayExtensions.swift in Sources */,
 				5A3CA802205D13F8002367E9 /* OperationController.swift in Sources */,
