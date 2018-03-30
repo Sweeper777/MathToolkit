@@ -33,6 +33,13 @@ class SettingsController: FormViewController {
                 UserSettings.valueOfPi = [Double.pi, 3.1416, 3.14, 22.0 / 7.0][index]
             }
         })
+        
+        form +++ SegmentedRow<String>(tagUseDegrees) {
+            row in
+            row.title = "Angles in".localized
+            row.options = ["Radians", "Degrees"]
+            row.value = "Radians"
+        }
     }
     
     @IBAction func done() {
