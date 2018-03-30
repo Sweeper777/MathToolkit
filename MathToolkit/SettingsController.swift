@@ -21,6 +21,13 @@ class SettingsController: FormViewController {
                 }
             }
         })
+        
+        form +++ PickerInlineRow<String>(tagValueOfPi) {
+            row in
+            row.title = "Value of π".localized
+            row.options = ["\(Double.pi)", "3.1416", "3.14", "22 / 7"]
+            row.value = "\(Double.pi)"
+        }
     }
     
     @IBAction func done() {
