@@ -7,7 +7,7 @@ class SettingsController: FormViewController {
         super.viewDidLoad()
         
         form +++ Section("significant figures option".localized)
-        form.allSections.last! <<< PickerRow<String>(tagSigiFigOption) {
+        form.allSections.last! <<< PickerInlineRow<String>(tagSigiFigOption) {
             row in
             row.title = "Significant Figures"
             row.options = ["As accurate as possible", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
