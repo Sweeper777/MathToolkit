@@ -53,3 +53,5 @@ class SettingsController: FormViewController {
 }
 
 let tagSigiFigOption = "sigFigOption"
+let tagValueOfPi = "valueOfPi"
+let tagUseDegrees = "useDegrees"
