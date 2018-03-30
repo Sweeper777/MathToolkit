@@ -40,6 +40,11 @@ class SettingsController: FormViewController {
             row.options = ["Radians", "Degrees"]
             row.value = "Radians"
         }
+        .onChange({ (row) in
+            if let index = row.options?.index(of: row.value!) {
+                UserSettings.useDegrees = index == 1
+            }
+        })
     }
     
     @IBAction func done() {
