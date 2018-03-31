@@ -10,8 +10,12 @@ class SettingsController: FormViewController {
         form.allSections.last! <<< PickerInlineRow<String>(tagSigiFigOption) {
             row in
             row.title = "Significant Figures".localized
-            row.options = ["As accurate as possible", "1", "2", "3", "4", "5", "6", "7", "8", "9"].map { $0.localized }
-            row.value = "As accurate as possible".localized
+            let options = ["Most accurate", "1", "2", "3", "4", "5", "6", "7", "8", "9"].map { $0.localized }
+            row.options = options
+            switch UserSettings.sigFigOption {
+            case .no: row.value = options[0]
+            case .yes(let sigFig): row.value = options[sigFig]
+            }
         }.onChange({ (row) in
             if let index = row.options.index(of: row.value!) {
                 if index == 0 {
