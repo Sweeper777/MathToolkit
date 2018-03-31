@@ -2,17 +2,15 @@ import Foundation
 
 class UserSettings {
     static var valueOfPi: Double {
+    }
+    
+    static var valueOfPiOption: Int {
         get {
-            if UserDefaults.standard.double(forKey: "valueOfPi") == 0 {
-                UserDefaults.standard.set(Double.pi, forKey: "valueOfPi")
-                return Double.pi
-            } else {
-                return UserDefaults.standard.double(forKey: "valueOfPi")
-            }
+            return UserDefaults.standard.integer(forKey: "valueOfPiOption")
         }
         
         set {
-            UserDefaults.standard.set(newValue, forKey: "valueOfPi")
+            UserDefaults.standard.set(newValue, forKey: "valueOfPiOption")
         }
     }
     
