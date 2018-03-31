@@ -43,7 +43,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Operations" id="OyB-gs-90n">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="m6d-C8-cQg">
+                        <barButtonItem key="leftBarButtonItem" image="settings" id="m6d-C8-cQg">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="ikV-wB-xvX" kind="presentation" modalPresentationStyle="formSheet" id="lFs-Fp-yUb"/>
