@@ -2,6 +2,7 @@ import Foundation
 
 class UserSettings {
     static var valueOfPi: Double {
+        return [Double.pi, 3.1416, 3.14, 22.0 / 7.0][valueOfPiOption]
     }
     
     static var valueOfPiOption: Int {
