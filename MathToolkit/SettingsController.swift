@@ -35,7 +35,7 @@ class SettingsController: FormViewController {
         }
         .onChange({ (row) in
             if let index = row.options.index(of: row.value!) {
-                UserSettings.valueOfPi = [Double.pi, 3.1416, 3.14, 22.0 / 7.0][index]
+                UserSettings.valueOfPiOption = index
             }
         })
         
