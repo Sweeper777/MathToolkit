@@ -29,8 +29,9 @@ class SettingsController: FormViewController {
         form +++ PickerInlineRow<String>(tagValueOfPi) {
             row in
             row.title = "Value of π".localized
-            row.options = ["\(Double.pi)", "3.1416", "3.14", "22 / 7"]
-            row.value = "\(Double.pi)"
+            let options = ["\(Double.pi)", "3.1416", "3.14", "22 / 7"]
+            row.options = options
+            row.value = options[UserSettings.valueOfPiOption]
         }
         .onChange({ (row) in
             if let index = row.options.index(of: row.value!) {
