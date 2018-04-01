@@ -43,7 +43,7 @@ class SettingsController: FormViewController {
             row in
             row.title = "Angles in".localized
             row.options = ["Radians", "Degrees"]
-            row.value = "Radians"
+            row.value = UserSettings.useDegrees ? "Degrees" : "Radians"
         }
         .onChange({ (row) in
             if let index = row.options?.index(of: row.value!) {
