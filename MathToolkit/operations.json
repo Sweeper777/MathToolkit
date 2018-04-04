@@ -241,6 +241,13 @@
       {
         "resultName": "Area",
         "expression": "sqrt((($s1 + $s2 + $s3) / 2) * ((($s1 + $s2 + $s3) / 2) - $s1) * ((($s1 + $s2 + $s3) / 2) - $s2) * ((($s1 + $s2 + $s3) / 2) - $s3))"
+      }
+    ]
+  },
+  {
+    "name": "Degrees, Radians, Gradians",
+    "category": "Misc",
+    "image": null,
       },
       {
       }
