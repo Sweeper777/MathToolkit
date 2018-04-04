@@ -76,6 +76,10 @@ struct JsonOperation: Codable, OperationProtocol {
                 }
             }
         }
+        
+        if let operationExtension = OperationExtensions.allExtensions[self.name] {
+            results.append(contentsOf: operationExtension(inputs))
+        }
         return results
     }
 }
