@@ -275,6 +275,61 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "C",
+        "expression": "sqrt($A * $A + $B * $B)"
+      },
+      {
+        "resultName": "B",
+        "expression": "sqrt($C * $C  - $A * $A)"
+      },
+      {
+        "resultName": "A",
+        "expression": "sqrt($C * $C - $B * $B)"
+      },
+      {
+        "resultName": "a",
+        "expression": "atan($B / $A)"
+      },
+      {
+        "resultName": "b",
+        "expression": "atan($A / $B)"
+      },
+      {
+        "resultName": "a",
+        "expression": "acos($A / $C)"
+      },
+      {
+        "resultName": "b",
+        "expression": "acos($B / $C)"
+      },
+      {
+        "resultName": "a",
+        "expression": "asin($B / $C)"
+      },
+      {
+        "resultName": "b",
+        "expression": "asin($A / $C)"
+      },
+      {
+        "resultName": "C",
+        "expression": "$A / cos($a)"
+      },
+      {
+        "resultName": "C",
+        "expression": "$A / sin($b)"
+      },
+      {
+        "resultName": "C",
+        "expression": "$B / cos($b)"
+      },
+      {
+        "resultName": "C",
+        "expression": "$B / sin($a)"
+      },
+  },
+  {
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
