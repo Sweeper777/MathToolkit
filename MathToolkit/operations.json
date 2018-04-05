@@ -248,6 +248,23 @@
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
+    "inputs": [
+      {
+        "name": "d",
+        "description": "Angle in degrees",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "r",
+        "description": "Angle in radians",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "g",
+        "description": "Angle in gradians",
+        "rejectFloatingPoint": false
+      }
+    ],
       },
       {
       }
