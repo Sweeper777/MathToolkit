@@ -328,6 +328,47 @@
         "resultName": "C",
         "expression": "$B / sin($a)"
       },
+      {
+        "resultName": "B",
+        "expression": "$C * cos($b)"
+      },
+      {
+        "resultName": "B",
+        "expression": "$C * sin($a)"
+      },
+      {
+        "resultName": "B",
+        "expression": "$A / tan($b)"
+      },
+      {
+        "resultName": "B",
+        "expression": "$A * tan($a)"
+      },
+      {
+        "resultName": "A",
+        "expression": "$C * cos($a)"
+      },
+      {
+        "resultName": "A",
+        "expression": "$C * sin($b)"
+      },
+      {
+        "resultName": "A",
+        "expression": "$B / tan($a)"
+      },
+      {
+        "resultName": "A",
+        "expression": "$B * tan($b)"
+      },
+      {
+        "resultName": "a",
+        "expression": "$pref90 - $b"
+      },
+      {
+        "resultName": "b",
+        "expression": "$pref90 - $a"
+      }
+    ]
   },
   {
     "name": "Degrees, Radians, Gradians",
