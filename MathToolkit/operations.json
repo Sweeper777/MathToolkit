@@ -248,6 +248,33 @@
     "name": "Right Angled Triangle",
     "category": "Triangles",
     "image": "rightAngledTriangle",
+    "inputs": [
+      {
+        "name": "A",
+        "description": "Refer to figure",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "B",
+        "description": "Refer to figure",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "C",
+        "description": "Refer to figure",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "a",
+        "description": "Refer to figure, measured in ANGLE_MEASURE",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "b",
+        "description": "Refer to figure, measured in ANGLE_MEASURE",
+        "rejectFloatingPoint": false
+      }
+    ],
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
