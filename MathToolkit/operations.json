@@ -278,8 +278,17 @@
         "resultName": "Degrees",
         "expression": "180 * $r / $pi"
       },
+      {
+        "resultName": "Gradians",
+        "expression": "(180 * $r / $pi) * (10 / 9)"
       },
       {
+        "resultName": "Degrees",
+        "expression": "$g / (10 / 9)"
+      },
+      {
+        "resultName": "Radians",
+        "expression": "($g / (10 / 9)) * $pi / 180"
       }
     ]
   }
