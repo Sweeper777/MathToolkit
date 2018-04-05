@@ -245,6 +245,9 @@
     ]
   },
   {
+    "name": "Right Angled Triangle",
+    "category": "Triangles",
+    "image": "rightAngledTriangle",
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
