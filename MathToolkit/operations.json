@@ -265,6 +265,19 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Radians",
+        "expression": "$d * $pi / 180"
+      },
+      {
+        "resultName": "Gradians",
+        "expression": "$d * (10 / 9)"
+      },
+      {
+        "resultName": "Degrees",
+        "expression": "180 * $r / $pi"
+      },
       },
       {
       }
