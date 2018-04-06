@@ -371,6 +371,19 @@
     ]
   },
   {
+    "name": "Prime Number",
+    "category": "General Numbers",
+    "image": null,
+    "inputs": [
+      {
+        "name": "x",
+        "description": "The number to test whether it is a prime.",
+        "rejectFloatingPoint": true
+      }
+    ],
+    "implementations": []
+  },
+  {
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
