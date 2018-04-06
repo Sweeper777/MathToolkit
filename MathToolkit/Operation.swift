@@ -57,7 +57,7 @@ struct JsonOperation: Codable, OperationProtocol {
         for impl in implementations {
             if let expression = try? Expression(string: impl.expression), let result = try? evaluator.evaluate(expression, substitutions: substitutions) {
                 
-                let fromValues = String(format: "From %@".localized, impl.fromValues.joined(separator: ", "))
+                let fromValues = impl.fromValues.sorted().joined(separator: ", ")
                 if impl.resultName.hasPrefix("'") && impl.resultName.hasSuffix("'") {
                     let value = (result == 1 ? "True" : "False")
                     results.append(OperationResult(
