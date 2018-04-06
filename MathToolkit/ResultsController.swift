@@ -25,7 +25,7 @@ class ResultController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MGSwipeTableCell
         if let result = results?[indexPath.section][indexPath.row] {
             cell.textLabel?.text = result.value.localized
-            cell.detailTextLabel?.text = result.from.localized
+            cell.detailTextLabel?.text = String(format: "From %@".localized, result.from)
             let copyButton = MGSwipeButton(title: "Copy", backgroundColor: .gray)
             copyButton.callback = { [weak self] cell in
                 UIPasteboard.general.string = cell.textLabel?.text as String?
