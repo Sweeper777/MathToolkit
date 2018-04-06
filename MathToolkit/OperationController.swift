@@ -22,7 +22,7 @@ class OperationController: FormViewController {
             }.cellSetup({ (cell, row) in
                 let imageView = UIImageView(image: UIImage(named: imageName))
                 imageView.contentMode = .scaleAspectFit
-                imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
+                imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
                 cell.view = imageView
             })
         }
