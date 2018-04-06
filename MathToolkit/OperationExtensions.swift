@@ -6,7 +6,8 @@ class OperationExtensions {
     private init() {}
     
     static let allExtensions: [String: OperationExtension] = [
-        "Triangle": triangle
+        "Triangle": triangle,
+        "Prime Number": primeNumber
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -24,6 +25,17 @@ class OperationExtensions {
             } else {
                 results.append(OperationResult(name: "Right Angled", from: "s1, s2, s3", value: "False"))
             }
+        }
+        return results
+    }
+    
+    private static func primeNumber(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        func isPrime(_ number: Int) -> Bool {
+            return number > 1 && !(2..<number).contains { number % $0 == 0 }
+        }
+        if let x = inputs["x"] {
+            results.append(OperationResult(name: "Is Prime?", from: "x", value: isPrime(Int(x)) ? "True" : "False"))
         }
         return results
     }
