@@ -4,6 +4,7 @@ import SCLAlertView
 
 class ResultController: UITableViewController {
     var results: [[OperationResult]]!
+    var displayAsFraction: [IndexPath] = []
     
     override func viewDidLoad() {
         title = "Results".localized
