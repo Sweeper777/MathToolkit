@@ -25,7 +25,12 @@ class ResultController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MGSwipeTableCell
         if let result = results?[indexPath.section][indexPath.row] {
-            cell.textLabel?.text = result.value.localized
+            if displayAsFraction.contains(indexPath) {
+                let value = Double(result.value)!
+                cell.textLabel?.text = value.toFraction().description
+            } else {
+                cell.textLabel?.text = result.value.localized
+            }
             cell.detailTextLabel?.text = String(format: "From %@".localized, result.from)
             let copyButton = MGSwipeButton(title: "Copy", backgroundColor: .gray)
             copyButton.callback = { [weak self] cell in
