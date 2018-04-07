@@ -20,3 +20,12 @@ import Foundation
 //    }
 //    return new Rational(pfound, qfound);
 //}
+
+struct Fraction: CustomStringConvertible {
+    let numerator: Int
+    let denominator: Int
+    
+    var description: String {
+        return "\(numerator) / \(denominator)"
+    }
+}
