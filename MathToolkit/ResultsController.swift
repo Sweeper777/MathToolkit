@@ -76,4 +76,17 @@ class ResultController: UITableViewController {
         alert.addButton("OK".localized, action: {})
         alert.showSuccess("Success!".localized, subTitle: message)
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard results != nil && results.isNotEmpty else { return }
+        guard let _ = Double(results[indexPath.section][indexPath.row].value) else { return }
+        if displayAsFraction.contains(indexPath) {
+            _ = displayAsFraction.remove(object: indexPath)
+            tableView.reloadRows(at: [indexPath], with: .none)
+        } else {
+            displayAsFraction.append(indexPath)
+            tableView.reloadRows(at: [indexPath], with: .none)
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
