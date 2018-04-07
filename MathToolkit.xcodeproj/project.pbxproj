@@ -12,6 +12,7 @@
 		5A37DDCF205539010086A294 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37DDCE205539010086A294 /* StringExtensions.swift */; };
 		5A3A74482062EC8B002CAC17 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A74472062EC8B002CAC17 /* ResultsController.swift */; };
 		5A3B05682070CB79006BB974 /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B05672070CB79006BB974 /* OperationExtensions.swift */; };
+		5A3C79A12078A673002CC1A6 /* FractionConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C79A02078A673002CC1A6 /* FractionConverter.swift */; };
 		5A3CA800205D1392002367E9 /* MySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA7FF205D1392002367E9 /* MySplitViewController.swift */; };
 		5A3CA802205D13F8002367E9 /* OperationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA801205D13F8002367E9 /* OperationController.swift */; };
 		5A3CA804205D18FD002367E9 /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CA803205D18FD002367E9 /* Threading.swift */; };
@@ -35,6 +36,7 @@
 		5A37DDCE205539010086A294 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		5A3A74472062EC8B002CAC17 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 		5A3B05672070CB79006BB974 /* OperationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationExtensions.swift; sourceTree = "<group>"; };
+		5A3C79A02078A673002CC1A6 /* FractionConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionConverter.swift; sourceTree = "<group>"; };
 		5A3CA7FF205D1392002367E9 /* MySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySplitViewController.swift; sourceTree = "<group>"; };
 		5A3CA801205D13F8002367E9 /* OperationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationController.swift; sourceTree = "<group>"; };
 		5A3CA803205D18FD002367E9 /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				5A3CA805205D2880002367E9 /* ArrayExtensions.swift */,
 				5A37DDCC20552DEE0086A294 /* UserSettings.swift */,
 				5A3CA803205D18FD002367E9 /* Threading.swift */,
+				5A3C79A02078A673002CC1A6 /* FractionConverter.swift */,
 				5A3D0E1F205C6052005313E7 /* operations.json */,
 			);
 			path = MathToolkit;
@@ -284,6 +287,7 @@
 				5A37DDCF205539010086A294 /* StringExtensions.swift in Sources */,
 				5A3CA806205D2880002367E9 /* ArrayExtensions.swift in Sources */,
 				5A3CA802205D13F8002367E9 /* OperationController.swift in Sources */,
+				5A3C79A12078A673002CC1A6 /* FractionConverter.swift in Sources */,
 				5AEBB0CE205407B800008359 /* OperationsListController.swift in Sources */,
 				5A3CA800205D1392002367E9 /* MySplitViewController.swift in Sources */,
 				5A3B05682070CB79006BB974 /* OperationExtensions.swift in Sources */,
