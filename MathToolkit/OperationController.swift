@@ -70,6 +70,11 @@ class OperationController: FormViewController {
             row in
             row.title = "Toggle Help".localized
         }
+            .onCellSelection({ [unowned self] (cell, row) in
+            let section = self.form.sectionBy(tag: "help")!
+            section.hidden = Condition(booleanLiteral: !section.isHidden)
+            section.evaluateHidden()
+        })
             .cellUpdate({ (cell, row) in
             cell.textLabel?.textColor = UIColor(hex: "3b7b3b")
         })
