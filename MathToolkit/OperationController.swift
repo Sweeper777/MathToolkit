@@ -88,6 +88,10 @@ class OperationController: FormViewController {
                 cell.textLabel?.numberOfLines = 0
             })
         }
+        helpSection.tag = "help"
+        helpSection.hidden = true
+        helpSection.evaluateHidden()
+        form +++ helpSection
     }
     
     @IBAction func calculate() {
