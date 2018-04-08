@@ -74,6 +74,13 @@ class OperationController: FormViewController {
             cell.textLabel?.textColor = UIColor(hex: "3b7b3b")
         })
         
+        let helpSection = Section()
+        for input in operation.inputs {
+            helpSection <<< LabelRow() {
+                row in
+                var description = "\(input.name) - \(input.description.localized)"
+            }
+        }
     }
     
     @IBAction func calculate() {
