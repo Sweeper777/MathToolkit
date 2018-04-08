@@ -79,6 +79,10 @@ class OperationController: FormViewController {
             helpSection <<< LabelRow() {
                 row in
                 var description = "\(input.name) - \(input.description.localized)"
+                if input.rejectFloatingPoint {
+                    description += " (integer only)".localized
+                }
+                row.title = description.replacingOccurrences(of: "ANGLE_MEASURE", with: UserSettings.useDegrees ? "degrees".localized : "radians".localized)
             }
         }
     }
