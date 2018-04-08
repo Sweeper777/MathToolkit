@@ -84,6 +84,9 @@ class OperationController: FormViewController {
                 }
                 row.title = description.replacingOccurrences(of: "ANGLE_MEASURE", with: UserSettings.useDegrees ? "degrees".localized : "radians".localized)
             }
+                .cellUpdate({ (cell, row) in
+                cell.textLabel?.numberOfLines = 0
+            })
         }
     }
     
