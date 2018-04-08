@@ -70,6 +70,10 @@ class OperationController: FormViewController {
             row in
             row.title = "Toggle Help".localized
         }
+            .cellUpdate({ (cell, row) in
+            cell.textLabel?.textColor = UIColor(hex: "3b7b3b")
+        })
+        
     }
     
     @IBAction func calculate() {
