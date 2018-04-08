@@ -65,6 +65,11 @@ class OperationController: FormViewController {
         }
         
         form +++ section
+        
+        form +++ ButtonRow() {
+            row in
+            row.title = "Toggle Help".localized
+        }
     }
     
     @IBAction func calculate() {
