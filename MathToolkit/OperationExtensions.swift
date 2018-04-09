@@ -29,11 +29,12 @@ class OperationExtensions {
         return results
     }
     
+    private static func isPrime(_ number: Int) -> Bool {
+        return number > 1 && !(2..<number).contains { number % $0 == 0 }
+    }
+    
     private static func primeNumber(inputs: [String: Double]) -> [OperationResult] {
         var results = [OperationResult]()
-        func isPrime(_ number: Int) -> Bool {
-            return number > 1 && !(2..<number).contains { number % $0 == 0 }
-        }
         if let x = inputs["x"] {
             results.append(OperationResult(name: "Is Prime?", from: "x", value: isPrime(Int(x)) ? "True" : "False"))
         }
