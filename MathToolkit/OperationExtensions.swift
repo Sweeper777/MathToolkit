@@ -7,7 +7,8 @@ class OperationExtensions {
     
     static let allExtensions: [String: OperationExtension] = [
         "Triangle": triangle,
-        "Prime Number": primeNumber
+        "Prime Number": primeNumber,
+        "Prime Factors": primeFactors,
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -37,6 +38,51 @@ class OperationExtensions {
         var results = [OperationResult]()
         if let x = inputs["x"] {
             results.append(OperationResult(name: "Is Prime?", from: "x", value: isPrime(Int(x)) ? "True" : "False"))
+        }
+        return results
+    }
+    
+    private static func primeFactors(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        
+        if let x = inputs["x"] {
+            var intX = Int(x)
+            let largestPrimeFactor = intX / 2
+            if largestPrimeFactor > 0 {
+                var primeFactors: [Int] = []
+                for i in 2...largestPrimeFactor {
+                    if isPrime(i) && intX % i == 0 {
+                        results.append(OperationResult(name: "Prime Factors", from: "x", value: "\(i)"))
+                        primeFactors.append(i)
+                    }
+                }
+                
+                var primeFactorProduct: [Int] = []
+                
+                for factor in primeFactors {
+                    while true {
+                        if intX % factor == 0 {
+                            intX /= factor
+                            primeFactorProduct.append(factor)
+                            continue
+                        } else {
+                            break
+                        }
+                    }
+                }
+                
+                var primeFactorProductResult = ""
+                
+                for i in 0..<primeFactorProduct.count {
+                    let factor = primeFactorProduct[i]
+                    if i == primeFactorProduct.count - 1 {
+                        primeFactorProductResult += "\(factor)"
+                    } else {
+                        primeFactorProductResult += "\(factor) × "
+                    }
+                }
+                results.append(OperationResult(name: "Multiplication of Prime Factors", from: "x", value: primeFactorProductResult))
+            }
         }
         return results
     }
