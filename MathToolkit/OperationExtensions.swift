@@ -86,4 +86,33 @@ class OperationExtensions {
         }
         return results
     }
+    
+    private static func getFactors(of x: Int) -> [Int] {
+        let largestFactor = x / 2
+        var arr: [Int] = []
+        
+        if largestFactor < 0 {
+            for i in 1...(-largestFactor) {
+                if x % i == 0 {
+                    arr.append(-i)
+                }
+            }
+            return arr
+        }
+        
+        if largestFactor == 0 {
+            return []
+        }
+        
+        for i in 1...largestFactor {
+            if x % i == 0 {
+                arr.append(i)
+            }
+        }
+        
+        if x != 1 {
+            arr.append((x))
+        }
+        return arr
+    }
 }
