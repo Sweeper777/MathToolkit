@@ -115,4 +115,17 @@ class OperationExtensions {
         }
         return arr
     }
+    
+    private static func gcd(x: Int, y: Int) -> Int {
+        let xFactors = getFactors(of: Int(x))
+        let yFactors = getFactors(of: Int(y))
+        var greatestCommonFactor = 1
+        for factor in xFactors {
+            if yFactors.contains(factor) {
+                greatestCommonFactor = factor
+            }
+        }
+        return greatestCommonFactor
+    }
+    
 }
