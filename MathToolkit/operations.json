@@ -371,6 +371,19 @@
     ]
   },
   {
+    "name": "Prime Factors",
+    "category": "Factors and Multiples",
+    "image": null,
+    "inputs": [
+      {
+        "name": "x",
+        "description": "The number to list all of its prime factors.",
+        "rejectFloatingPoint": true
+      }
+    ],
+    "implementations": []
+  },
+  {
     "name": "Prime Number",
     "category": "General Numbers",
     "image": null,
