@@ -9,6 +9,7 @@ class OperationExtensions {
         "Triangle": triangle,
         "Prime Number": primeNumber,
         "Prime Factors": primeFactors,
+        "Factors": factors,
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -126,6 +127,30 @@ class OperationExtensions {
             }
         }
         return greatestCommonFactor
+    }
+    
+    private static func factors(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        if let x = inputs["x"] {
+            let factors = getFactors(of: Int(x))
+            for factor in factors {
+                results.append(OperationResult(name: "Factors", from: "x", value: "\(factor)"))
+            }
+        }
+        
+        if let y = inputs["y"] {
+            let factors = getFactors(of: Int(y))
+            for factor in factors {
+                results.append(OperationResult(name: "Factors", from: "y", value: "\(factor)"))
+            }
+        }
+        
+        if let x = inputs["x"], let y = inputs["y"] {
+            let greatestCommonFactor = gcd(x: Int(x), y: Int(y))
+            results.append(OperationResult(name: "Greatest Common Factor", from: "x, y", value: "\(greatestCommonFactor)"))
+        }
+        
+        return results
     }
     
 }
