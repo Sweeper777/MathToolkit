@@ -10,6 +10,7 @@ class OperationExtensions {
         "Prime Number": primeNumber,
         "Prime Factors": primeFactors,
         "Factors": factors,
+        "Factor Pairs": factorPairs,
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -153,4 +154,15 @@ class OperationExtensions {
         return results
     }
     
+    private static func factorPairs(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        if let x = inputs["x"] {
+            let factors = getFactors(of: Int(x))
+            
+            for factor in factors {
+                results.append(OperationResult(name: "Factor Pairs", from: "x", value: "\(factor) × \(Int(x) / factor)"))
+            }
+        }
+        return results
+    }
 }
