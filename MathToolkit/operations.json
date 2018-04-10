@@ -402,6 +402,19 @@
     "implementations": []
   },
   {
+    "name": "Factor Pairs",
+    "category": "Factors and Multiples",
+    "image": null,
+    "inputs": [
+      {
+        "name": "x",
+        "description": "The number to get all its factor pairs",
+        "rejectFloatingPoint": true
+      }
+    ],
+    "implementations": []
+  },
+  {
     "name": "Prime Number",
     "category": "General Numbers",
     "image": null,
