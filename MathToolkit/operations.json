@@ -207,6 +207,21 @@
         "resultName": "Semi Minor Axis",
         "expression": "$A / ($a * $pi)"
       },
+      {
+        "resultName": "Perimeter",
+        "expression": "$pi * (3 * ($a  + $b) - sqrt((3$a + $b) * ($a + 3$b)))"
+      },
+      {
+        "resultName": "Semi Major Axis",
+        "expression": "(sqrt(-20 * $pi * $pi * $b * $b + 12 * $pi * $b * $P + 3 * $P * $P) - 4 * $pi * $b + 3 * $P) / (6 * $pi)"
+      },
+      {
+        "resultName": "Semi Minor Axis",
+        "expression": "(sqrt(-20 * $pi * $pi * $a * $a + 12 * $pi * $a * $P + 3 * $P * $P) - 4 * $pi * $a + 3 * $P) / (6 * $pi)"
+      }
+    ]
+  },
+  {
     "name": "Triangle",
     "image": "triangle",
     "category": "Triangles",
