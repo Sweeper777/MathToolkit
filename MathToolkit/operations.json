@@ -194,6 +194,19 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Area",
+        "expression": "$a * $b * $pi"
+      },
+      {
+        "resultName": "Semi Major Axis",
+        "expression": "$A / ($b * $pi)"
+      },
+      {
+        "resultName": "Semi Minor Axis",
+        "expression": "$A / ($a * $pi)"
+      },
     "name": "Triangle",
     "image": "triangle",
     "category": "Triangles",
