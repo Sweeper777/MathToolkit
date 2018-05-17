@@ -169,6 +169,9 @@
     ]
   },
   {
+    "name": "Ellipse",
+    "category": "Circles",
+    "image": "ellipse",
     "name": "Triangle",
     "image": "triangle",
     "category": "Triangles",
