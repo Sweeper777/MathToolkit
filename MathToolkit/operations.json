@@ -172,6 +172,28 @@
     "name": "Ellipse",
     "category": "Circles",
     "image": "ellipse",
+    "inputs": [
+      {
+        "name": "a",
+        "description": "Semi major axis of the ellipse",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "b",
+        "description": "Semi minor axis of the ellipse",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "A",
+        "description": "Area of the ellipse",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "P",
+        "description": "Perimeter of the ellipse, approximated by π(3(a + b) - √(3a + b)(a + 3b))",
+        "rejectFloatingPoint": false
+      }
+    ],
     "name": "Triangle",
     "image": "triangle",
     "category": "Triangles",
