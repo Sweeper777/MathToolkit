@@ -471,6 +471,21 @@
     "name": "Least Common Multiple",
     "category": "Factors and Multiples",
     "image": null,
+    "inputs": [
+      {
+        "name": "x",
+        "description": "The LCM of this number and y will be calculated",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "y",
+        "description": "The LCM of this number and x will be calculated",
+        "rejectFloatingPoint": false
+      }
+    ],
+    "implementations": []
+  },
+  {
     "name": "Prime Number",
     "category": "General Numbers",
     "image": null,
