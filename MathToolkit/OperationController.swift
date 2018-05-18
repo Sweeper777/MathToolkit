@@ -55,7 +55,14 @@ class OperationController: FormViewController {
                 toolbar?.addKey("/", to: row)
                 toolbar?.addKey("(", to: row)
                 toolbar?.addKey(")", to: row)
-                toolbar?.addKey("$", to: row)
+                toolbar?.addKey("$A", to: row)
+                toolbar?.addKey("$B", to: row)
+                toolbar?.addKey("$C", to: row)
+                toolbar?.addKey("$pi", to: row)
+                toolbar?.addKey("sqrt", to: row)
+                toolbar?.addKey("sin", to: row)
+                toolbar?.addKey("cos", to: row)
+                toolbar?.addKey("tan", to: row)
                 row.cell.textField.inputAccessoryView = toolbar
             }
             .cellUpdate({ (cell, row) in
