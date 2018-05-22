@@ -1,13 +1,13 @@
 PODS:
   - DDMathParser (2.0.0)
-  - Eureka (4.0.1)
+  - Eureka (4.1.1)
   - EZLoadingActivity (1.01)
-  - MGSwipeTableCell (1.6.6)
+  - MGSwipeTableCell (1.6.7)
   - Regexer (1.3.3)
   - RFKeyboardToolbar (1.3)
-  - RxCocoa (4.0.0):
+  - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
-  - RxSwift (4.0.0)
+  - RxSwift (4.1.2)
   - SCLAlertView (0.7.0)
   - SwiftRandom (1.0.0)
   - SwiftyUtils (2.0.0)
@@ -39,24 +39,24 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DDMathParser:
-    :commit: df33815fea0e8bc1594f7360712045817a184383
+    :commit: 31053a82c368e479dd4f2bc323bf271a540445e0
     :git: https://github.com/davedelong/DDMathParser.git
   SCLAlertView:
     :commit: 90826ee643e319375aadd6415aaa0e8fce643766
     :git: https://github.com/ahmedsafadii/SCLAlertView-Swift.git
   ViewRow:
-    :commit: fbfc539796f8a00102a671b338c1c3bbb39a6b89
+    :commit: 79843a7545a96ce1d271fe177f49134b3d18b07a
     :git: https://github.com/EurekaCommunity/ViewRow
 
 SPEC CHECKSUMS:
   DDMathParser: 74cddd0aa652cfed79e68fdd076f1ee63ab43a16
-  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
-  MGSwipeTableCell: c3bc6e261e7bc06c112909fe3fb8205de286082c
+  MGSwipeTableCell: fb20e983988bde2b8d0df29c2d9e1d8ffd10b74a
   Regexer: d313fc8028f02e9389ce574ed3e5818b62207997
   RFKeyboardToolbar: c96a7d9458564d1fedc8ef6844b6c467934aade2
-  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftRandom: 437275c63500ddf5a565cbd56996fb23f12cfc3d
   SwiftyUtils: ae914aa96b5672e9282904771e5e5b44d2e307d6
