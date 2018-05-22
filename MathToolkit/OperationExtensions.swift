@@ -119,15 +119,8 @@ class OperationExtensions {
     }
     
     private static func gcd(x: Int, y: Int) -> Int {
-        let xFactors = getFactors(of: Int(x))
-        let yFactors = getFactors(of: Int(y))
-        var greatestCommonFactor = 1
-        for factor in xFactors {
-            if yFactors.contains(factor) {
-                greatestCommonFactor = factor
-            }
-        }
-        return greatestCommonFactor
+        guard y != 0 else { return x }
+        return gcd(x: y, y: x % y)
     }
     
     private static func factors(inputs: [String: Double]) -> [OperationResult] {
@@ -147,7 +140,7 @@ class OperationExtensions {
         }
         
         if let x = inputs["x"], let y = inputs["y"] {
-            let greatestCommonFactor = gcd(x: Int(x), y: Int(y))
+            let greatestCommonFactor = gcd(x: abs(Int(x)), y: abs(Int(y)))
             results.append(OperationResult(name: "Greatest Common Factor", from: "x, y", value: "\(greatestCommonFactor)"))
         }
         
