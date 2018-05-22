@@ -11,6 +11,7 @@ class OperationExtensions {
         "Prime Factors": primeFactors,
         "Factors": factors,
         "Factor Pairs": factorPairs,
+        "Least Common Multiple": lcm,
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -158,4 +159,14 @@ class OperationExtensions {
         }
         return results
     }
+    
+    private static func lcm(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        if let x = inputs["x"], let y = inputs["y"] {
+            let lcm = abs(Int(x) * Int(y)) / gcd(x: abs(Int(x)), y: abs(Int(y)))
+            results.append(OperationResult(name: "LCM", from: "x, y", value: "\(lcm)"))
+        }
+        return results
+    }
+    
 }
