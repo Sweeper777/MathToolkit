@@ -502,6 +502,21 @@
     "name": "Scientific Notation",
     "category": "General Numbers",
     "image": null,
+    "inputs": [
+      {
+        "name": "n",
+        "description": "This number will be converted to scientific notation",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s",
+        "description": "This number will be converted to normal notation",
+        "rejectFloatingPoint": false
+      }
+    ],
+    "implementations": []
+  },
+  {
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
