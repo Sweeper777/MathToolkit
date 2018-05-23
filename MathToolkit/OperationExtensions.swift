@@ -189,6 +189,13 @@ class OperationExtensions {
                 results.append(OperationResult(name: "Scientific Notation Style 1", from: "n", value: str))
             }
             
+            formatter.exponentSymbol = " × 10 ^ "
+            formatter.positiveFormat = "0.######### × 10 ^ 0"
+            formatter.negativeFormat = "-0.######### × 10 ^ 0"
+            
+            if let str = formatter.string(from: n as NSNumber) {
+                results.append(OperationResult(name: "Scientific Notation Style 2", from: "n", value: str))
+            }
         }
         return results
     }
