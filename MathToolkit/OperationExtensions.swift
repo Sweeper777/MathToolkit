@@ -179,6 +179,17 @@ class OperationExtensions {
             results.append(OperationResult(name: "Normal Notation", from: "s", value: formatter.string(from: s as NSNumber)!))
         }
         
+        if let n = inputs["n"] {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .scientific
+            formatter.exponentSymbol = "e"
+            formatter.positiveFormat = "0.#########e0"
+            formatter.negativeFormat = "-0.#########e0"
+            if let str = formatter.string(from: n as NSNumber) {
+                results.append(OperationResult(name: "Scientific Notation Style 1", from: "n", value: str))
+            }
+            
+        }
         return results
     }
 }
