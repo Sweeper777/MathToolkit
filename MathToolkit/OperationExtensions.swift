@@ -12,6 +12,7 @@ class OperationExtensions {
         "Factors": factors,
         "Factor Pairs": factorPairs,
         "Least Common Multiple": lcm,
+        "Scientific Notation": sciNotation,
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -169,4 +170,15 @@ class OperationExtensions {
         return results
     }
     
+    private static func sciNotation(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        
+        if let s = inputs["s"] {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            results.append(OperationResult(name: "Normal Notation", from: "s", value: formatter.string(from: s as NSNumber)!))
+        }
+        
+        return results
+    }
 }
