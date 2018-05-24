@@ -318,6 +318,12 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "'Is Possible to Form Triangle'",
+        "expression": "($s1 + $s2 > $s3) && ($s1 + $s3 > $s2) && ($s2 + $s3 > $s1)"
+      }
+    ]
   },
   {
     "name": "Right Angled Triangle",
