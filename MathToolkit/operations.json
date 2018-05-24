@@ -301,6 +301,23 @@
     "name": "Triangle Inequality",
     "category": "Triangles",
     "image": null,
+    "inputs": [
+      {
+        "name": "s1",
+        "description": "The side length of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s2",
+        "description": "The side length of the triangle",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "s3",
+        "description": "The side length of the triangle",
+        "rejectFloatingPoint": false
+      }
+    ],
   },
   {
     "name": "Right Angled Triangle",
