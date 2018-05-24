@@ -13,6 +13,7 @@ class OperationExtensions {
         "Factor Pairs": factorPairs,
         "Least Common Multiple": lcm,
         "Scientific Notation": sciNotation,
+        "Triangle Inequality": triangleInequality,
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -197,6 +198,24 @@ class OperationExtensions {
                 results.append(OperationResult(name: "Scientific Notation Style 2", from: "n", value: str))
             }
         }
+        
+        return results
+    }
+    
+    private static func triangleInequality(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        if let s1 = inputs["s1"], let s2 = inputs["s2"] {
+            results.append(OperationResult(name: "s3", from: "s1, s2", value: "≤ \(UserSettings.sigFigOption.correct(s1 + s2))"))
+        }
+        
+        if let s1 = inputs["s1"], let s3 = inputs["s3"] {
+            results.append(OperationResult(name: "s2", from: "s1, s3", value: "≤ \(UserSettings.sigFigOption.correct(s1 + s3))"))
+        }
+        
+        if let s2 = inputs["s2"], let s3 = inputs["s3"] {
+            results.append(OperationResult(name: "s1", from: "s2, s3", value: "≤ \(UserSettings.sigFigOption.correct(s2 + s3))"))
+        }
+        
         return results
     }
 }
