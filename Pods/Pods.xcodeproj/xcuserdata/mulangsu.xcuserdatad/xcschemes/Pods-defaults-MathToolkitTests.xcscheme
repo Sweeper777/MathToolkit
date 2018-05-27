@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BB13DB844BBEEBDDA09A4E9E9FDC0A6C'
-               BlueprintName = 'RxCocoa'
+               BlueprintIdentifier = '10787B50A73D6C9F9357DE8DA1ACBC63'
+               BlueprintName = 'Pods-defaults-MathToolkitTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RxCocoa.framework'>
+               BuildableName = 'Pods-defaults-MathToolkitTests.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

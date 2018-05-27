@@ -9,10 +9,14 @@ struct OperationInput: Codable {
     let rejectFloatingPoint: Bool
 }
 
-struct OperationResult {
+struct OperationResult : Equatable{
     let name: String
     let from: String
     let value: String
+    
+    static func ==(lhs: OperationResult, rhs: OperationResult) -> Bool {
+        return lhs.name == rhs.name && lhs.value == rhs.value
+    }
 }
 
 protocol OperationProtocol {

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MathToolkitVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MathToolkitVersionString[];
+FOUNDATION_EXPORT double Pods_defaults_MathToolkitTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_defaults_MathToolkitTestsVersionString[];
 
