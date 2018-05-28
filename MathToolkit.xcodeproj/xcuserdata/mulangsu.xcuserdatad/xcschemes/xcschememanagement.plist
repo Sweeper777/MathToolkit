@@ -9,6 +9,24 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>MathToolkitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5A4D567620BAEEA800071C38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AEBB0C7205407B800008359</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
