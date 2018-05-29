@@ -10,4 +10,11 @@ class MathToolkitTests: XCTestCase {
         XCTAssertEqual(operationResult.value, "100")
     }
     
+    func testOperationImplementationSingleInput() {
+        let implementation = OperationImplementation(resultName: "Area", expression: "$r * $r * $pi")
+        XCTAssertEqual(implementation.expression, "$r * $r * $pi")
+        XCTAssertEqual(implementation.resultName, "Area")
+        XCTAssertEqual(implementation.fromValues, ["r"])
+    }
+    
 }
