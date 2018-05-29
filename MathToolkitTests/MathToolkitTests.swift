@@ -17,4 +17,8 @@ class MathToolkitTests: XCTestCase {
         XCTAssertEqual(implementation.fromValues, ["r"])
     }
     
+    func testOperationImplementationMultipleInputs() {
+        let implementation = OperationImplementation(resultName: "Area", expression: "$r * $r * $pi * $h")
+        XCTAssertEqual(implementation.fromValues, ["r", "h"])
+    }
 }
