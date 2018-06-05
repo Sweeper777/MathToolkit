@@ -40,5 +40,8 @@ class MathToolkitTests: XCTestCase {
         XCTAssertNotNil(primeNumberExtension)
         let noResult = primeNumberExtension!([:])
         XCTAssertTrue(noResult.isEmpty)
+        let trueResult = primeNumberExtension!(["x": 7])
+        XCTAssertTrue(trueResult.count == 1)
+        XCTAssertEqual(trueResult[0].value, "True")
     }
 }
