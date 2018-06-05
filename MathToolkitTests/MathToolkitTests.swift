@@ -21,4 +21,11 @@ class MathToolkitTests: XCTestCase {
         let implementation = OperationImplementation(resultName: "Area", expression: "$r * $r * $pi * $h")
         XCTAssertEqual(implementation.fromValues, ["r", "h"])
     }
+    
+    func testTriangleExtensions() {
+        let triangleExtension = OperationExtensions.allExtensions["Triangle"]
+        XCTAssertNotNil(triangleExtension)
+        let noResult = triangleExtension!([:])
+        XCTAssertTrue(noResult.isEmpty)
+    }
 }
