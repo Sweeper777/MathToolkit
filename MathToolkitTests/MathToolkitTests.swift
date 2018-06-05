@@ -27,5 +27,8 @@ class MathToolkitTests: XCTestCase {
         XCTAssertNotNil(triangleExtension)
         let noResult = triangleExtension!([:])
         XCTAssertTrue(noResult.isEmpty)
+        let trueResult = triangleExtension!(["a": 3, "b": 4, "c": 5])
+        XCTAssertTrue(trueResult.count == 1)
+        XCTAssertEqual(trueResult[0].value, "True")
     }
 }
