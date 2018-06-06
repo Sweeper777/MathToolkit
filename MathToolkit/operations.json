@@ -299,6 +299,11 @@
     ]
   },
   {
+    "name": "Arcs",
+    "category": "Circles",
+    "image": "arc",
+  },
+  {
     "name": "Triangle",
     "image": "triangle",
     "category": "Triangles",
