@@ -154,6 +154,18 @@
         "resultName": "Each Exterior Angle (if regular)",
         "expression": "$pref180 * 2 / (-$pref180 * 2 / ($i - $pref180))"
       },
+      {
+        "resultName": "Number of Angles (if regular)",
+        "expression": "$pref180 * 2 / $e"
+      },
+      {
+        "resultName": "Sum of Interior Angles (if regular)",
+        "expression": "($pref180 * 2 / $e - 2) * $pref180"
+      },
+      {
+        "resultName": "Each Interior Angle (if regular)",
+        "expression": "($pref180 * 2 / $e - 2) * $pref180 / ($pref180 * 2 / $e)"
+      }
     ]
   },
   {
