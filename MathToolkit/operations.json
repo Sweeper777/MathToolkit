@@ -117,6 +117,20 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Sum of Interior Angles",
+        "expression": "($n - 2) * $pref180"
+      },
+      {
+        "resultName": "Each Interior Angle (if regular)",
+        "expression": "($n - 2) * $pref180 / $n"
+      },
+      {
+        "resultName": "Each Exterior Angle (if regular)",
+        "expression": "$pref180 * 2 / $n"
+      },
+    ]
   },
   {
     "name": "Circle",
