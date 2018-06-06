@@ -302,6 +302,23 @@
     "name": "Arcs",
     "category": "Circles",
     "image": "arc",
+    "inputs": [
+      {
+        "name": "r",
+        "description": "The radius of the arc",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "θ",
+        "description": "The angle at the center, in ANGLE_MEASURE",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "a",
+        "description": "The arc length",
+        "rejectFloatingPoint": false
+      }
+    ],
   },
   {
     "name": "Triangle",
