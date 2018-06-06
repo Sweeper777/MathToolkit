@@ -95,6 +95,28 @@
     "name": "Angles of Polygon",
     "category": "2D Figures",
     "image": null,
+    "inputs": [
+      {
+        "name": "n",
+        "description": "Number of interior angles of the polygon",
+        "rejectFloatingPoint": true
+      },
+      {
+        "name": "S",
+        "description": "Sum of all interior angles of the polygon, in ANGLE_MEASURE",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "i",
+        "description": "The size of each interior angle of the polygon, in ANGLE_MEASURE (This is only applicable when the polygon is a regular polygon)",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "e",
+        "description": "Size of each exterior angle of the polygon, in ANGLE_MEASURE (This is only applicable when the polygon is a regular polygon)",
+        "rejectFloatingPoint": false
+      }
+    ],
   },
   {
     "name": "Circle",
