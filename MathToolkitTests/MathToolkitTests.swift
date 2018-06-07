@@ -53,5 +53,9 @@ class MathToolkitTests: XCTestCase {
         XCTAssertNotNil(primeFactorExtension)
         let noResult = primeFactorExtension!([:])
         XCTAssertTrue(noResult.isEmpty)
+        let result1 = primeFactorExtension!(["x": 14])
+        XCTAssertEqual(result1.count, 3)
+        XCTAssertTrue(result1.contains { $0.value == "2" })
+        XCTAssertTrue(result1.contains { $0.value == "7" })
     }
 }
