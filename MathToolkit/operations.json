@@ -319,6 +319,20 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Arc Length",
+        "expression": "$pi * $r * ($θ / ($pref180 * 2))"
+      },
+      {
+        "resultName": "Angle at the Center",
+        "expression": "($a * $pref180 * 2) / (2 * $pi * $r)"
+      },
+      {
+        "resultName": "Radius",
+        "expression": "$a / ($θ / ($pref180 * 2)) / (2 * $pi)"
+      }
+    ]
   },
   {
     "name": "Triangle",
