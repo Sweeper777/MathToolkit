@@ -57,5 +57,9 @@ class MathToolkitTests: XCTestCase {
         XCTAssertEqual(result1.count, 3)
         XCTAssertTrue(result1.contains { $0.value == "2" })
         XCTAssertTrue(result1.contains { $0.value == "7" })
+        let result2 = primeFactorExtension!(["x": 7])
+        XCTAssertEqual(result2.count, 1)
+        print(result2.map {$0.value})
+        XCTAssertEqual(result2[0].value, "7")
     }
 }
