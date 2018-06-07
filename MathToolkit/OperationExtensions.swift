@@ -52,6 +52,12 @@ class OperationExtensions {
         
         if let x = inputs["x"] {
             var intX = Int(x)
+            
+            if isPrime(intX) {
+                results.append(OperationResult(name: "Prime Factors", from: "x", value: "\(intX)"))
+                return results
+            }
+            
             let largestPrimeFactor = intX / 2
             if largestPrimeFactor > 0 {
                 var primeFactors: [Int] = []
