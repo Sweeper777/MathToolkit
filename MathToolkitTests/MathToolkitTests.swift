@@ -47,4 +47,11 @@ class MathToolkitTests: XCTestCase {
         XCTAssertTrue(falseResult.count == 1)
         XCTAssertEqual(falseResult[0].value, "False")
     }
+    
+    func testPrimeFactorsExtensions() {
+        let primeFactorExtension = OperationExtensions.allExtensions["Prime Factors"]
+        XCTAssertNotNil(primeFactorExtension)
+        let noResult = primeFactorExtension!([:])
+        XCTAssertTrue(noResult.isEmpty)
+    }
 }
