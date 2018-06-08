@@ -338,6 +338,23 @@
     "name": "Sectors",
     "category": "Circles",
     "image": "sector",
+    "inputs": [
+      {
+        "name": "r",
+        "description": "The radius of the sector",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "θ",
+        "description": "The angle at the center, in ANGLE_MEASURE",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "A",
+        "description": "The area of the sector",
+        "rejectFloatingPoint": false
+      }
+    ],
   },
   {
     "name": "Triangle",
