@@ -697,6 +697,26 @@
     "name": "Random Number Generator",
     "category": "General Numbers",
     "image": null,
+    "inputs": [
+      {
+        "name": "n",
+        "description": "The number of random numbers to generate",
+        "rejectFloatingPoint": true
+      },
+      {
+        "name": "M",
+        "description": "The minimum value of random numbers",
+        "rejectFloatingPoint": true
+      },
+      {
+        "name": "N",
+        "description": "The maximum value of random numbers",
+        "rejectFloatingPoint": true
+      }
+    ],
+    "implementations": []
+  },
+  {
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
