@@ -1,4 +1,5 @@
 import Foundation
+import SwiftRandom
 
 typealias OperationExtension = ([String : Double]) -> [OperationResult]
 
@@ -14,6 +15,7 @@ class OperationExtensions {
         "Least Common Multiple": lcm,
         "Scientific Notation": sciNotation,
         "Triangle Inequality": triangleInequality,
+        "Random Number Generator": randomNumGen,
     ]
     
     private static func triangle(inputs: [String: Double]) -> [OperationResult] {
@@ -220,6 +222,19 @@ class OperationExtensions {
         
         if let s2 = inputs["s2"], let s3 = inputs["s3"] {
             results.append(OperationResult(name: "s1", from: "s2, s3", value: "≤ \(UserSettings.sigFigOption.correct(s2 + s3))"))
+        }
+        
+        return results
+    }
+    
+    private static func randomNumGen(inputs: [String: Double]) -> [OperationResult] {
+        var results = [OperationResult]()
+        
+        if let n = inputs["n"].map(Int.init), let min = inputs["M"].map(Int.init), let max = inputs["N"].map(Int.init) {
+            for _ in 0..<n {
+                let randomNumber = Int.random(min, max)
+                results.append(OperationResult(name: "Random Number", from: "n, M, N", value: "\(randomNumber)"))
+            }
         }
         
         return results
