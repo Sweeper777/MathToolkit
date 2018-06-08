@@ -694,6 +694,9 @@
     "implementations": []
   },
   {
+    "name": "Random Number Generator",
+    "category": "General Numbers",
+    "image": null,
     "name": "Degrees, Radians, Gradians",
     "category": "Misc",
     "image": null,
