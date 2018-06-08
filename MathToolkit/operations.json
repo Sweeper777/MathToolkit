@@ -335,6 +335,11 @@
     ]
   },
   {
+    "name": "Sectors",
+    "category": "Circles",
+    "image": "sector",
+  },
+  {
     "name": "Triangle",
     "image": "triangle",
     "category": "Triangles",
