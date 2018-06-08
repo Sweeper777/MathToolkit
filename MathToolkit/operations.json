@@ -355,6 +355,20 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Area",
+        "expression": "$pi * $r * $r * ($θ / ($pref180 * 2))"
+      },
+      {
+        "resultName": "Angle at the Center",
+        "expression": "($A * $pref180 * 2) / ($r * $pi * $r)"
+      },
+      {
+        "resultName": "Radius",
+        "expression": "sqrt($A / ($θ / ($pref180 * 2)) / $pi)"
+      }
+    ]
   },
   {
     "name": "Triangle",
