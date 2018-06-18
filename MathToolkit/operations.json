@@ -828,6 +828,22 @@
         "resultName": "u",
         "expression": "sqr$t(2 * $a * $s - $v * $v)"
       },
+      {
+        "resultName": "v",
+        "expression": "$u + $a * $t"
+      },
+      {
+        "resultName": "v",
+        "expression": "($s + $a * $t * $t) / (2 * $t)"
+      },
+      {
+        "resultName": "v",
+        "expression": "(2 * $s) / $t - $u"
+      },
+      {
+        "resultName": "v",
+        "expression": "sqr$t($u * $u + 2 * $a * $s)"
+      },
     ]
   }
 ]
