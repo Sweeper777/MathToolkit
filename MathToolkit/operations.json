@@ -763,5 +763,10 @@
         "expression": "($g / (10 / 9)) * $pi / 180"
       }
     ]
+  },
+  {
+    "name": "SUVAT Equations",
+    "category": "Other",
+    "image": null,
   }
 ]
