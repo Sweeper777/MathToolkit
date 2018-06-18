@@ -768,5 +768,32 @@
     "name": "SUVAT Equations",
     "category": "Other",
     "image": null,
+    "inputs": [
+      {
+        "name": "s",
+        "description": "Displacement",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "u",
+        "description": "Initial velocity",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "v",
+        "description": "Final velocity",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "a",
+        "description": "Acceleration",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "t",
+        "description": "Time",
+        "rejectFloatingPoint": false
+      }
+    ],
   }
 ]
