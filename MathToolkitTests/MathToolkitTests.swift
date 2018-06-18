@@ -63,4 +63,11 @@ class MathToolkitTests: XCTestCase {
         print(result2.map {$0.value})
         XCTAssertEqual(result2[0].value, "7")
     }
+    
+    func testFactorsExtensions() {
+        let factorsExtension = OperationExtensions.allExtensions["Factors"]
+        XCTAssertNotNil(factorsExtension)
+        let noResult = factorsExtension!([:])
+        XCTAssertTrue(noResult.isEmpty)
+    }
 }
