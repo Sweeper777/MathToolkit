@@ -795,5 +795,23 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "s",
+        "expression": "$v * $t - ($a * $t * $t) / 2"
+      },
+      {
+        "resultName": "s",
+        "expression": "$u * $t + ($a * $t * $t) / 2"
+      },
+      {
+        "resultName": "s",
+        "expression": "($t / 2) * ($u + $v)"
+      },
+      {
+        "resultName": "s",
+        "expression": "($u * $u + $v * $v) / (2 * $a)"
+      },
+    ]
   }
 ]
