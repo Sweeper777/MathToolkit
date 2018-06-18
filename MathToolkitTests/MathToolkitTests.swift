@@ -69,5 +69,12 @@ class MathToolkitTests: XCTestCase {
         XCTAssertNotNil(factorsExtension)
         let noResult = factorsExtension!([:])
         XCTAssertTrue(noResult.isEmpty)
+        let result1 = factorsExtension!(["x": 16])
+        XCTAssertEqual(result1.count, 5)
+        XCTAssertTrue(result1.contains { $0.value == "1" })
+        XCTAssertTrue(result1.contains { $0.value == "2" })
+        XCTAssertTrue(result1.contains { $0.value == "4" })
+        XCTAssertTrue(result1.contains { $0.value == "8" })
+        XCTAssertTrue(result1.contains { $0.value == "16" })
     }
 }
