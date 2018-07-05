@@ -604,6 +604,28 @@
     "name": "Sphere",
     "category": "3D Figures",
     "image": null,
+    "inputs": [
+      {
+        "name": "r",
+        "description": "The radius",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "d",
+        "description": "The diameter",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "A",
+        "description": "The total surface area",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "V",
+        "description": "The volume",
+        "rejectFloatingPoint": false
+      }
+    ],
   },
   {
     "name": "Factors",
