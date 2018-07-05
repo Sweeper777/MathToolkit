@@ -601,6 +601,11 @@
     ]
   },
   {
+    "name": "Sphere",
+    "category": "3D Figures",
+    "image": null,
+  },
+  {
     "name": "Factors",
     "category": "Factors and Multiples",
     "image": null,
