@@ -681,6 +681,28 @@
     "name": "Ellipsoid",
     "category": "3D Figures",
     "image": null,
+    "inputs": [
+      {
+        "name": "a",
+        "description": "One of the three semi-axes",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "b",
+        "description": "One of the three semi-axes",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "c",
+        "description": "One of the three semi-axes",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "V",
+        "description": "The volume",
+        "rejectFloatingPoint": false
+      }
+    ],
   },
   {
     "name": "Factors",
