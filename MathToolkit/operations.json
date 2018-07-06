@@ -665,15 +665,15 @@
       },
       {
         "resultName": "Radius",
-        "expression": "cuberoot($V / (pu * 4 / 3))"
+        "expression": "cuberoot($V / ($pi * 4 / 3))"
       },
       {
         "resultName": "Diameter",
-        "expression": "cuberoot($V / (pu * 4 / 3)) * 2"
+        "expression": "cuberoot($V / (($pi * 4 / 3)) * 2"
       },
       {
         "resultName": "Surface Area",
-        "expression": "4 * $pi * (cuberoot($V / (pu * 4 / 3)) ** 2)"
+        "expression": "4 * $pi * (cuberoot($V / (($pi * 4 / 3)) ** 2)"
       }
   },
   {
