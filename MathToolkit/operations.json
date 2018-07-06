@@ -663,6 +663,18 @@
         "resultName": "Volume",
         "expression": "sqrt($A / (4 * $pi)) ** 3 * $pi * 4 / 3"
       },
+      {
+        "resultName": "Radius",
+        "expression": "cuberoot($V / (pu * 4 / 3))"
+      },
+      {
+        "resultName": "Diameter",
+        "expression": "cuberoot($V / (pu * 4 / 3)) * 2"
+      },
+      {
+        "resultName": "Surface Area",
+        "expression": "4 * $pi * (cuberoot($V / (pu * 4 / 3)) ** 2)"
+      }
   },
   {
     "name": "Factors",
