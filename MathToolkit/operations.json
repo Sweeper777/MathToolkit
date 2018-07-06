@@ -675,6 +675,12 @@
         "resultName": "Surface Area",
         "expression": "4 * $pi * (cuberoot($V / (($pi * 4 / 3)) ** 2)"
       }
+    ]
+  },
+  {
+    "name": "Ellipsoid",
+    "category": "3D Figures",
+    "image": null,
   },
   {
     "name": "Factors",
