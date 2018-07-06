@@ -639,6 +639,18 @@
         "resultName": "Volume",
         "expression": "$r * $r * $r * $pi * 4 / 3"
       },
+      {
+        "resultName": "Radius",
+        "expression": "$d / 2"
+      },
+      {
+        "resultName": "Surface Area",
+        "expression": "4 * $pi * (($d / 2) ** 2)"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "($d / 2) ** 3 * $pi * 4 / 3"
+      },
   },
   {
     "name": "Factors",
