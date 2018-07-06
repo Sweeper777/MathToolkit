@@ -651,6 +651,18 @@
         "resultName": "Volume",
         "expression": "($d / 2) ** 3 * $pi * 4 / 3"
       },
+      {
+        "resultName": "Radius",
+        "expression": "sqrt($A / (4 * $pi))"
+      },
+      {
+        "resultName": "Diameter",
+        "expression": "sqrt($A / (4 * $pi)) * 2"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "sqrt($A / (4 * $pi)) ** 3 * $pi * 4 / 3"
+      },
   },
   {
     "name": "Factors",
