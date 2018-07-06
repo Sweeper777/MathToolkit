@@ -626,6 +626,19 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Diameter",
+        "expression": "$r * 2"
+      },
+      {
+        "resultName": "Surface Area",
+        "expression": "4 * $pi * $r * $r"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "$r * $r * $r * $pi * 4 / 3"
+      },
   },
   {
     "name": "Factors",
