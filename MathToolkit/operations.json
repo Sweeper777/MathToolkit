@@ -753,6 +753,24 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Base Area",
+        "expression": "$pi * $r ** 2"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "$h * $pi * $r ** 2"
+      },
+      {
+        "resultName": "Curved Surface Area",
+        "expression": "$r * 2 * $pi * $h"
+      },
+      {
+        "resultName": "Total Surface Area",
+        "expression": "$r * 2 * $pi * $h + 2 * ($pi * $r ** 2)"
+      },
+    ]
   },  
   {
     "name": "Factors",
