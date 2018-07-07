@@ -726,6 +726,33 @@
     "name": "Cylinder",
     "category": "3D Figures",
     "image": null,
+    "inputs": [
+      {
+        "name": "r",
+        "description": "The base radius",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "h",
+        "description": "The height",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "Ab",
+        "description": "The base area",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "Al",
+        "description": "The curved surface area",
+        "rejectFloatingPoint": false
+      },
+      {
+        "name": "A",
+        "description": "The total surface area",
+        "rejectFloatingPoint": false
+      }
+    ],
   },  
   {
     "name": "Factors",
