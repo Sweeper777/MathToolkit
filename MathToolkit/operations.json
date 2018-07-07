@@ -703,6 +703,24 @@
         "rejectFloatingPoint": false
       }
     ],
+    "implementations": [
+      {
+        "resultName": "Volume",
+        "expression": "(4 / 3) * $pi * $a * $b * $c"
+      },
+      {
+        "resultName": "Semi-axis c",
+        "expression": "$V / (4 / 3) / $pi / $a / $b"
+      },
+      {
+        "resultName": "Semi-axis b",
+        "expression": "$V / (4 / 3) / $pi / $a / $c"
+      },
+      {
+        "resultName": "Semi-axis a",
+        "expression": "$V / (4 / 3) / $pi / $c / $b"
+      }
+    ]
   },
   {
     "name": "Factors",
