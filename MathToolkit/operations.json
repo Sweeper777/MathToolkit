@@ -782,6 +782,18 @@
         "resultName": "Total Surface Area",
         "expression": "$Al + 2 * ($pi * $r ** 2)"
       },
+      {
+        "resultName": "Height",
+        "expression": "($A - $pi * $r * $r * 2) / (2 * $pi * $r)"
+      },
+      {
+        "resultName": "Curved Surface Area",
+        "expression": "$A - 2 * ($pi * $r ** 2)"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "(($A - $pi * $r * $r * 2) / (2 * $pi * $r)) * ($pi * $r ** 2)"
+      },
     ]
   },  
   {
