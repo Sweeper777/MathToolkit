@@ -822,6 +822,22 @@
         "resultName": "Volume",
         "expression": "($Al ** 2) / (4 * $h * $h * $pi) * $h"
       },
+      {
+        "resultName": "Radius",
+        "expression": "(sqrt(2 * $A / $pi + $h ** 2) - $h) / 2"
+      },
+      {
+        "resultName": "Base Area",
+        "expression": "$pi * $h * sqrt(2 * $A / $pi + $h ** 2) * (-1 / 2) + ($A + $pi * $h * $h) / 2"
+      },
+      {
+        "resultName": "Curved Surface Area",
+        "expression": "$A - 2 * ($pi * $h * sqrt(2 * $A / $pi + $h ** 2) * (-1 / 2) + ($A + $pi * $h * $h) / 2)"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "($pi * $h * sqrt(2 * $A / $pi + $h ** 2) * (-1 / 2) + ($A + $pi * $h * $h) / 2) * $h"
+      },
     ]
   },  
   {
