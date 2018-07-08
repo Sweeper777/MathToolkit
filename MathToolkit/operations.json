@@ -849,6 +849,10 @@
       {
         "resultName": "Base Area",
         "expression": "V / $h"
+      },
+      {
+        "resultName": "Radius",
+        "expression": "sqrt($Ab / $pi)"
       }
     ]
   },  
