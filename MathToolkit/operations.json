@@ -853,9 +853,22 @@
       {
         "resultName": "Radius",
         "expression": "sqrt($Ab / $pi)"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "$Ab * $h"
+      },
+      {
+        "resultName": "Curved Surface Area",
+        "expression": "2 * $pi * sqrt($Ab / $pi) * $h"
+      },
+      {
+        "resultName": "Total Surface Area",
+        "expression": "2 * $pi * sqrt($Ab / $pi) * $h + 2 * $Ab"
+      },
       }
     ]
-  },  
+  },
   {
     "name": "Factors",
     "category": "Factors and Multiples",
