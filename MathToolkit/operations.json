@@ -806,6 +806,22 @@
         "resultName": "Total Surface Area",
         "expression": "2 * V / $r + 2 * ($pi * $r ** 2)"
       },
+      {
+        "resultName": "Radius",
+        "expression": "$Al / $h / 2 / $pi"
+      },
+      {
+        "resultName": "Base Area",
+        "expression": "($Al ** 2) / (4 * $h * $h * $pi)"
+      },
+      {
+        "resultName": "Total Surface Area",
+        "expression": "$Al + 2 * (($Al ** 2) / (4 * $h * $h * $pi))"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "($Al ** 2) / (4 * $h * $h * $pi) * $h"
+      },
     ]
   },  
   {
