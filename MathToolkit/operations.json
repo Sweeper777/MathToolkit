@@ -866,6 +866,18 @@
         "resultName": "Total Surface Area",
         "expression": "2 * $pi * sqrt($Ab / $pi) * $h + 2 * $Ab"
       },
+      {
+        "resultName": "Height",
+        "expression": "$Al / 2 / sqrt($Ab / $pi) / $pi"
+      },
+      {
+        "resultName": "Volume",
+        "expression": "$Ab * ($Al / 2 / sqrt($Ab / $pi) / $pi)"
+      },
+      {
+        "resultName": "Total Surface Area",
+        "expression": "$Al + 2 * $Ab"
+      },
       }
     ]
   },
