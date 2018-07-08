@@ -794,6 +794,18 @@
         "resultName": "Volume",
         "expression": "(($A - $pi * $r * $r * 2) / (2 * $pi * $r)) * ($pi * $r ** 2)"
       },
+      {
+        "resultName": "Height",
+        "expression": "V / ($pi * $r ** 2)"
+      },
+      {
+        "resultName": "Curved Surface Area",
+        "expression": "2 * V / $r"
+      },
+      {
+        "resultName": "Total Surface Area",
+        "expression": "2 * V / $r + 2 * ($pi * $r ** 2)"
+      },
     ]
   },  
   {
