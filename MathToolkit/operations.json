@@ -902,6 +902,9 @@
         "resultName": "Total Surface Area",
         "expression": "2 * (V / $Ab) * $pi * sqrt($Ab / $pi) + 2 * $Ab"
       },
+      {
+        "resultName": "Base Area",
+        "expression": "($A - $Al) / 2"
       }
     ]
   },
