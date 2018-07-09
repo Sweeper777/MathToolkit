@@ -796,15 +796,15 @@
       },
       {
         "resultName": "Height",
-        "expression": "V / ($pi * $r ** 2)"
+        "expression": "$V / ($pi * $r ** 2)"
       },
       {
         "resultName": "Curved Surface Area",
-        "expression": "2 * V / $r"
+        "expression": "2 * $V / $r"
       },
       {
         "resultName": "Total Surface Area",
-        "expression": "2 * V / $r + 2 * ($pi * $r ** 2)"
+        "expression": "2 * $V / $r + 2 * ($pi * $r ** 2)"
       },
       {
         "resultName": "Radius",
@@ -840,15 +840,15 @@
       },
       {
         "resultName": "Radius",
-        "expression": "sqrt(V / $h / $pi)"
+        "expression": "sqrt($V / $h / $pi)"
       },
       {
         "resultName": "Curved Surface Area",
-        "expression": "2 * $h * $pi * sqrt(V / $h / $pi)"
+        "expression": "2 * $h * $pi * sqrt($V / $h / $pi)"
       },
       {
         "resultName": "Base Area",
-        "expression": "V / $h"
+        "expression": "$V / $h"
       },
       {
         "resultName": "Radius",
@@ -892,22 +892,22 @@
       },
       {
         "resultName": "Height",
-        "expression": "V / $Ab"
+        "expression": "$V / $Ab"
       },
       {
         "resultName": "Curved Surface Area",
-        "expression": "2 * (V / $Ab) * $pi * sqrt($Ab / $pi)"
+        "expression": "2 * ($V / $Ab) * $pi * sqrt($Ab / $pi)"
       },
       {
         "resultName": "Total Surface Area",
-        "expression": "2 * (V / $Ab) * $pi * sqrt($Ab / $pi) + 2 * $Ab"
+        "expression": "2 * ($V / $Ab) * $pi * sqrt($Ab / $pi) + 2 * $Ab"
       },
       {
         "resultName": "Base Area",
         "expression": "($A - $Al) / 2"
       }
     ]
-  },
+  },  
   {
     "name": "Factors",
     "category": "Factors and Multiples",
