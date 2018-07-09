@@ -1147,7 +1147,7 @@
       },
       {
         "resultName": "v",
-        "expression": "($s + $a * $t * $t) / (2 * $t)"
+        "expression": "($s + $a * $t * $t / 2) / $t"
       },
       {
         "resultName": "v",
@@ -1155,7 +1155,7 @@
       },
       {
         "resultName": "v",
-        "expression": "sqr$t($u * $u + 2 * $a * $s)"
+        "expression": "sqrt($u * $u + 2 * $a * $s)"
       },
       {
         "resultName": "a",
