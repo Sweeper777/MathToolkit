@@ -751,6 +751,11 @@
         "name": "A",
         "description": "The total surface area",
         "rejectFloatingPoint": false
+      },
+      {
+        "name": "V",
+        "description": "The volume",
+        "rejectFloatingPoint": false
       }
     ],
     "implementations": [
