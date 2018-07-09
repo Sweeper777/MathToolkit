@@ -1179,11 +1179,11 @@
       },
       {
         "resultName": "t",
-        "expression": "($v - sqr$t($v * $v - 2 * $a * $s)) / $a"
+        "expression": "($v - sqrt($v * $v - 2 * $a * $s)) / $a"
       },
       {
         "resultName": "t",
-        "expression": "(sqr$t(2 * $a * $s + $u * $u) - $u) / $a"
+        "expression": "(sqrt(2 * $a * $s + $u * $u) - $u) / $a"
       },
       {
         "resultName": "t",
