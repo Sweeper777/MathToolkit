@@ -1167,7 +1167,7 @@
       },
       {
         "resultName": "a",
-        "expression": "(2 * ($s - $u * $t) / ($t * $t)"
+        "expression": "(2 * ($s - $u * $t)) / ($t * $t)"
       },
       {
         "resultName": "a",
